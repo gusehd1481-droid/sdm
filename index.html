@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./script/common.js" defer></script>
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header 시작 -->
+        <header>
+            <p class="menu"><img src="./images/common/hamburger_menu.png" alt="메뉴"></p>
+            <h1><a href="#"><img src="./images/common/logo.png" alt="시드물"></a></h1>
+            <div class="snb">
+                <a href="#" class="search_btn"><img src="./images/common/search.png" alt="검색하기"></a>
+                <a href="#" class="my_cart_btn"><img src="./images/common/my_cart.png" alt="장바구니"></a>
+                <a href="#" class="my_menu_btn"><img src="./images/common/my_menu.png" alt="마이페이지"></a>
+        </header>
+        <!-- main 시작 -->
+        <main>
+            <div id="hero_wrap">
+                <div class="swiper hero_bnr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="txt_box">
+                                <p>자연의 생명력을 그대로 머금은</p>
+                                <h1>시드물 더 진정 에센스</h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="txt_box">
+                                <p>자연의 생명력을 그대로 머금은</p>
+                                <h1>시드물 더 진정 에센스</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="contents_box">
+                <div id="best_wrap">
+                    <h1>Best seller</h1>
+                    <div class="action_btn_box">
+                        <ul class="category">
+                            <li class="active"><a href="#">토너</a></li>
+                            <li><a href="#">앰플</a></li>
+                            <li><a href="#">로션</a></li>
+                            <li><a href="#">크림</a></li>
+                            <li><a href="#">선케어</a></li>
+                        </ul>
+                        <a href="#"><img src="./images/common/more.png" alt="전체상품보기"></a>
+                    </div>
+                    <div class="swiper best_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="product_info">
+                                    <p class="ranking">1</p>
+                                    <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                    <h1>울트라 페이셜 히알루로산 토너</h1>
+                                    <div class="price_info">
+                                        <span class="discount_rate">71%</span><em>42000원</em><p class="price">9800원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- footer 시작 -->
+        <footer></footer>
+    </div>
+</body>
+</html>

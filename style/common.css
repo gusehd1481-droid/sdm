@@ -1,0 +1,14 @@
+header {
+    width:100%; height:70px; padding:0 200px;
+    display:flex; justify-content:space-between; align-items:center;
+    position:fixed; z-index:9999;
+}
+header .menu {width:32px;}
+header .menu img {width:100%;}
+header h1 {width:167px;}
+header h1 a {}
+header h1 a img {width:100%;}
+header .snb {display:flex; gap:10px;}
+header .snb p {width:16px;}
+header .snb p img {width:100%;}
+footer {}

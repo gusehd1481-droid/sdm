@@ -1,0 +1,27 @@
+body {}
+#wrap {}
+#wrap header {}
+/* ======================================================================main */
+#wrap main {}
+#wrap main #hero_wrap {}
+#wrap main #hero_wrap .hero_bnr {width:100%; height:100vh;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper {}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 200px;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-color:yellowgreen;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-color:aqua;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
+    height:100%;
+    display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end;
+    border:1px solid black;
+}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:200; font-size:1.25rem;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box h1 {font-weight:700; font-size:2.0rem;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {}
+#wrap main #hero_wrap .hero_bnr .swiper-button-prev,
+#wrap main #hero_wrap .hero_bnr .swiper-button-next {color:#000; width:16px;}
+#wrap main #hero_wrap .hero_bnr .prev {left:200px;}
+#wrap main #hero_wrap .hero_bnr .next {right:200px;}
+#wrap main #hero_wrap .hero_bnr .swiper-progressbar {}
+/* ======================================================================footer */
+#wrap footer {}
