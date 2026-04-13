@@ -3,6 +3,7 @@ body {}
 #wrap header {}
 /* ======================================================================main */
 #wrap main {}
+/* ====================================================================== 히어로 배너 */
 #wrap main #hero_wrap {}
 #wrap main #hero_wrap .hero_bnr {width:100%; height:100vh;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper {}
@@ -12,7 +13,6 @@ body {}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
     height:100%;
     display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end;
-    border:1px solid black;
 }
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:200; font-size:1.25rem;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box h1 {font-weight:700; font-size:2.0rem;}
@@ -22,6 +22,49 @@ body {}
 #wrap main #hero_wrap .hero_bnr .swiper-button-next {color:#000; width:16px;}
 #wrap main #hero_wrap .hero_bnr .prev {left:200px;}
 #wrap main #hero_wrap .hero_bnr .next {right:200px;}
-#wrap main #hero_wrap .hero_bnr .swiper-progressbar {}
+#wrap main #hero_wrap .hero_bnr .bnr_player {
+    display:flex; flex-flow:row nowrap; align-items:center; gap:10px;
+    position:absolute; bottom:230px; left:200px; z-index:999;
+}
+#wrap main #hero_wrap .hero_bnr .bnr_player .player_bar {width:330px; animation:player_bar 4s linear infinite; height:1px; background-color: #000;}
+#wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px;}
+#wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn img {width:100%;}
+/* ======================================================================베스트 셀러 */
+#wrap main .contents_box {padding:100px 200px;}
+#wrap main .contents_box #best_wrap {}
+#wrap main .contents_box #best_wrap h1 {font-size:1.5rem; font-weight:700;}
+#wrap main .contents_box #best_wrap .action_btn_box {display:flex; justify-content:space-between;}
+#wrap main .contents_box #best_wrap .action_btn_box .category {display:flex; gap:30px;}
+#wrap main .contents_box #best_wrap .action_btn_box .category li {padding:10px 0; width:max-content;}
+#wrap main .contents_box #best_wrap .action_btn_box .category li a {font-size:1.13rem; color:#777777;}
+#wrap main .contents_box #best_wrap .action_btn_box .category .active {border-bottom:1px solid #000;}
+#wrap main .contents_box #best_wrap .action_btn_box .category .active a {color:#000;}
+#wrap main .contents_box #best_wrap .action_btn_box .more {display:block; width:32px;}
+#wrap main .contents_box #best_wrap .action_btn_box .more img {width:100%;}
+#wrap main .contents_box #best_wrap .best_swiper {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .slide1 {
+    background-image:url(/portfolio_project/sdm/images/product/sdm_001.png);
+    background-repeat: no-repeat; background-size:cover;
+}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .ranking {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .desc {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info h1 {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .price_info {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .price_info .discount_rate {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .price_info em {}
+#wrap main .contents_box #best_wrap .best_swiper .swiper-wrapper .swiper-slide .product_info .price_info .price {}
 /* ======================================================================footer */
 #wrap footer {}
+@keyframes player_bar {
+    0% {
+        transform:scaleX(0);
+        transform-origin:left;
+    }
+    100% {
+        transform:scaleX(1);
+        transform-origin:left;
+    }
+}
