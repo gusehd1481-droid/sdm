@@ -48,7 +48,8 @@ body {}
 #wrap main .contents_box .product_slide .swiper-scrollbar .swiper-scrollbar-horizontal .swiper-scrollbar-drag {
     background:#000;
 }
-#wrap main .contents_box .product_slide {/* display:none; */}
+#wrap main .contents_box .product_slide { display:none;}
+#wrap main .contents_box .product_slide.active {display:block;}
 #wrap main .contents_box .ampoule {display:none;}
 #wrap main .contents_box .product_slide .swiper {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper {}

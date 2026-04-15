@@ -31,18 +31,17 @@ const bestAmpouleSwiper = new Swiper(bestAmpoule,{
 
 //===================================================================상품 슬라이드 product_slide 
 
-const bestProductSlide = document.querySelectorAll('#best_wrap .product_slide');
-const category = document.querySelectorAll('#best_wrap .category a');
-console.log(bestProductSlide,category);
-for(let i of category){
-    i.addEventListener('click',function(){
-        i.classList.remove('active');
-        i.classList.add('active');
-        productSlideHide();
-        bestProductSlide.style.display = 'block';
-    })
-};
-function productSlideHide(){
-    bestProductSlide.style.display = 'none';
-}
-//집에서 다시 ㄱ
+$('.category a').on('click', function(e){
+    e.preventDefault();
+
+    let idx = $(this).index();
+
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.product_slide').removeClass('active').eq(idx).addClass('active');
+
+    // swiper 업데이트
+    if(idx === 0) tonerSwiper.update();
+    if(idx === 1) ampouleSwiper.update();
+
+    console.log(idx);
+});
