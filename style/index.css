@@ -36,10 +36,8 @@ body {}
 #wrap main .contents_box {padding:100px 200px;}
 #wrap main .contents_box .action_btn_box {display:flex; justify-content:space-between; margin:30px 0 60px 0;}
 #wrap main .contents_box .action_btn_box .category {display:flex; gap:30px;}
-#wrap main .contents_box .action_btn_box .category li {padding:10px 0; width:max-content;}
-#wrap main .contents_box .action_btn_box .category li a {font-size:1.13rem; color:#777777;}
-#wrap main .contents_box .action_btn_box .category .active {border-bottom:1px solid #000;}
-#wrap main .contents_box .action_btn_box .category .active a {color:#000;}
+#wrap main .contents_box .action_btn_box .category a {display:block; padding:10px 0; width:max-content; font-size:1.13rem; color:#777777;}
+#wrap main .contents_box .action_btn_box .category .active {display:block; border-bottom:1px solid #000; color:#000;}
 #wrap main .contents_box .action_btn_box .more {display:block; width:32px;}
 #wrap main .contents_box .action_btn_box .more img {width:100%;} 
 #wrap main .contents_box .product_slide {position:relative;}
@@ -50,6 +48,8 @@ body {}
 #wrap main .contents_box .product_slide .swiper-scrollbar .swiper-scrollbar-horizontal .swiper-scrollbar-drag {
     background:#000;
 }
+#wrap main .contents_box .product_slide {/* display:none; */}
+#wrap main .contents_box .ampoule {display:none;}
 #wrap main .contents_box .product_slide .swiper {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide {}
@@ -57,12 +57,13 @@ body {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .slide1 {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {position:relative;}
-#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .photo {
+#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {display:block;}
+#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo {
     padding-top:50px;
     width:100%; background-color:#f9f9f9; 
 }
-#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .photo img {width:100%;}
-#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail  .ranking_box {
+#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo img {width:100%;}
+#wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .ranking_box {
     background-color:#000; text-align:center; width:32px; height:32px; padding-top:3px;
     position:absolute; left:0; top:0;
 }
@@ -70,7 +71,7 @@ body {}
     font-weight:800; color:#fff; 
 }
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .like_btn {
-    width:16px; position:absolute; right:30px; bottom:30px;
+    width:16px; height:16px; position:absolute; right:30px; bottom:30px; 
 }
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .like_btn img {width:100%;}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .product_desc > * {line-height:1;}
@@ -90,6 +91,12 @@ body {}
 #wrap main .contents_box #new_wrap > h1 {font-size:1.5rem; font-weight:700;}
 /* ======================================================================footer */
 #wrap footer {}
+/* =================================================================================================================================== 인스타그램  */
+#wrap main .instagram {padding:60px 200px;}
+#wrap main .instagram h1 {}
+#wrap main .instagram .feed_container {display:flex; flex-flow:row nowrap; gap:10px;}
+#wrap main .instagram .feed_container a {display:block; width:calc(100% / 3); background-color: red;}
+#wrap main .instagram .feed_container a img {width:100%;}
 @keyframes player_bar {
     0% {
         transform:scaleX(0);

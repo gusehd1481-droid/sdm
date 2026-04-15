@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>피부의 고향, 시드물</title>
+    <!-- 제이쿼리 연결 -->
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/jquery">
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -47,7 +49,7 @@
                     </div>
                     <div class="swiper-button-prev prev"></div>
                     <div class="swiper-button-next next"></div>
-                    <div class="bnr_player">
+                    <div class="bnr_player"><!-- js로 수정 예정 -->
                         <p class="player_bar"></p>
                         <p class="pause_btn"><img src="./images/common/pause.png" alt="광고배너멈추기"></p>
                     </div>
@@ -57,23 +59,25 @@
                 <div id="best_wrap">
                     <h1>Best seller</h1>
                     <div class="action_btn_box">
-                        <ul class="category">
-                            <li class="active"><a href="#">토너</a></li>
-                            <li><a href="#">앰플</a></li>
-                            <li><a href="#">로션</a></li>
-                            <li><a href="#">크림</a></li>
-                            <li><a href="#">선케어</a></li>
-                        </ul>
+                        <div class="category">
+                            <a href="#" class="active">토너</a>
+                            <a href="#">앰플</a>
+                            <a href="#">로션</a>
+                            <a href="#">크림</a>
+                            <a href="#">선케어</a>
+                        </div>
                         <a href="#" class="more"><img src="./images/common/more.png" alt="전체상품보기"></a>
                     </div>
-                    <div class="product_slide">
-                        <div class="swiper best_swiper">
+                    <div class="product_slide toner">
+                        <div class="swiper best_toner_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                            </a>
+                                            <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
                                             <p class="ranking_box">
                                                 <span class="ranking">1</span>
                                             </p>
@@ -90,11 +94,13 @@
                                 <div class="swiper-slide slide2">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -108,11 +114,13 @@
                                 <div class="swiper-slide slide3">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -126,11 +134,13 @@
                                 <div class="swiper-slide slide4">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -144,11 +154,13 @@
                                 <div class="swiper-slide slide5">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -162,11 +174,13 @@
                                 <div class="swiper-slide slide6">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -180,11 +194,200 @@
                                 <div class="swiper-slide slide7">
                                     <div class="product_info">
                                         <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide8">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="product_slide ampoule">
+                        <div class="swiper best_ampoule_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/smd_002.png" alt=""></p>
+                                            </a>
+                                            <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
                                             <p class="ranking_box">
                                                 <span class="ranking">1</span>
                                             </p>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide7">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="product_desc">
+                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
+                                            <h1>울트라 페이셜 히알루론산 토너</h1>
+                                            <div class="price_info">
+                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide8">
+                                    <div class="product_info">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                                                <a href="#" class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></a>
+                                                <p class="ranking_box">
+                                                    <span class="ranking">1</span>
+                                                </p>
+                                            </a>
                                         </div>
                                         <div class="product_desc">
                                             <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
@@ -201,157 +404,50 @@
                     </div>
                 </div>
             </div>
-            <div class="contents_box new_box">
-                <div id="new_wrap">
-                    <h1>New</h1>
-                    <div class="action_btn_box">
-                        <ul class="category">
-                            <li class="active"><a href="#">토너</a></li>
-                            <li><a href="#">앰플</a></li>
-                            <li><a href="#">로션</a></li>
-                            <li><a href="#">크림</a></li>
-                            <li><a href="#">선케어</a></li>
-                        </ul>
-                        <a href="#" class="more"><img src="./images/common/more.png" alt="전체상품보기"></a>
-                    </div>
-                    <div class="product_slide">
-                        <div class="swiper new_swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide1">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">론산
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide2">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide3">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide4">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide5">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide6">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slide7">
-                                    <div class="product_info">
-                                        <div class="thumbnail">
-                                            <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
-                                            <p class="like_btn"><img src="./images/common/like_btn.png" alt="찜하기"></p>
-                                            <p class="ranking_box">
-                                                <span class="ranking">1</span>
-                                            </p>
-                                        </div>
-                                        <div class="product_desc">
-                                            <span class="desc">건조한 피부를 위한 수분 충전 토너</span>
-                                            <h1>울트라 페이셜 히알루론산 토너</h1>
-                                            <div class="price_info">
-                                                <span class="discount_rate">71%</span><em>42,000원</em><p class="price">9,800원</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-scrollbar"></div>
-                    </div>
+            <div class="instagram">
+                <h1>instagram</h1>
+                <div class="feed_container">
+                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="#" alt=""></a>
+                    <a href="#"><img src="#" alt=""></a>
                 </div>
             </div>
         </main>
         <!-- footer 시작 -->
-        <footer></footer>
+        <footer>
+            <div class="f_top">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/common/logo.png" alt="시드물">
+                    </a>
+                    <span>The origin of skin</span>
+                </div>
+                <div class="language_btn">
+                    <a href="#">
+                        <img src="./images/common/language.png" alt="">
+                        <span>한국어</span>
+                        <img src="./images/common/down_arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <ul class="company_info">
+                    <li>시드물 대표 : 민병권 개인정보책임자 : 박소진</li>
+                    <li>주소 : 대전시 중구 안영로 42(안영동</li>
+                    <li>대표메일 : help@sidmool.com 팩스 : 042-367-7989</li>
+                    <li>사업자번호 : 305-81-94469 화장품 제조판매업 : 등록필증 제 1163호</li>
+                </ul>
+                <ul class="fnb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><span>개인정보처리방침</span></a></li>
+                    <li><a href="#">무이자 할부 혜택</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
