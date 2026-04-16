@@ -11,8 +11,7 @@ body {}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-color:yellowgreen;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-color:aqua;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
-    height:100%;
-    display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end;
+    display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end; position:absolute; left:200px; bottom:30%;
 }
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:200; font-size:1.25rem;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box h1 {font-weight:700; font-size:2.0rem;}
@@ -24,7 +23,7 @@ body {}
 #wrap main #hero_wrap .hero_bnr .next {right:200px;}
 #wrap main #hero_wrap .hero_bnr .bnr_player {
     display:flex; flex-flow:row nowrap; align-items:center; gap:10px;
-    position:absolute; bottom:230px; left:200px; z-index:999;
+    position:absolute; bottom:26%; left:200px; z-index:999;
 }
 #wrap main #hero_wrap .hero_bnr .bnr_player .player_bar {width:330px; animation:player_bar 4s linear infinite; height:1px; background-color: #000;}
 #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px;}
@@ -93,11 +92,22 @@ body {}
 /* ======================================================================footer */
 #wrap footer {}
 /* =================================================================================================================================== 인스타그램  */
-#wrap main .instagram {padding:60px 200px;}
-#wrap main .instagram h1 {}
-#wrap main .instagram .feed_container {display:flex; flex-flow:row nowrap; gap:10px;}
-#wrap main .instagram .feed_container a {display:block; width:calc(100% / 3); background-color: red;}
+#wrap main .instagram {padding:60px 200px; text-align:center;}
+#wrap main .instagram h1 {font-size:2.0rem; font-weight:700; padding:30px 0;}
+#wrap main .instagram .feed_container {width:100%; display:flex; flex-flow:row wrap; gap:10px;}
+#wrap main .instagram .feed_container a {
+    display:block; width:calc((100% - 20px) / 3);
+    aspect-ratio: 1/1; 
+    background-position:center; background-size: cover;
+} 
+#wrap main .instagram .feed_container a:nth-child(1) {background-image: url(../images/photo/sdm_insta_001.jpg);}
+#wrap main .instagram .feed_container a:nth-child(2) {background-image: url(../images/photo/sdm_insta_002.jpg);}
+#wrap main .instagram .feed_container a:nth-child(3) {background-image: url(../images/photo/sdm_insta_003.jpg);}
+#wrap main .instagram .feed_container a:nth-child(4) {background-image: url(../images/photo/sdm_insta_004.jpg);}
+#wrap main .instagram .feed_container a:nth-child(5) {background-image: url(../images/photo/sdm_insta_005.jpg);}
+#wrap main .instagram .feed_container a:nth-child(6) {background-image: url(../images/photo/sdm_insta_006.jpg);}
 #wrap main .instagram .feed_container a img {width:100%;}
+/* =================================================================================================================================== keyframe 모음  */
 @keyframes player_bar {
     0% {
         transform:scaleX(0);
