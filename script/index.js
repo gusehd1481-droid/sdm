@@ -3,7 +3,8 @@ const bestToner = document.querySelector('.toner .best_toner_swiper');
 const bestAmpoule = document.querySelector('.ampoule .best_ampoule_swiper');
 const newToner = document.querySelector('.toner .new_toner_swiper');
 const newAmpoule = document.querySelector('.ampoule .new_ampoule_swiper');
-console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule);
+const foryouToner = document.querySelector('.for_you_trouble_swiper');
+console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouToner);
 const heroSwiper = new Swiper(heroBnr,{
     autoplay:{
         delay:4000,
@@ -42,7 +43,13 @@ const newAmpouleSwiper = new Swiper(newAmpoule,{
         el:'#new_wrap .ampoule .swiper-scrollbar',
     },
 });
-
+const foryouTroubleSwiper = new Swiper(foryouToner,{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#for_you_wrap .swiper-scrollbar',
+    },
+});
 
 //===================================================================상품 슬라이드 product_slide 
 
