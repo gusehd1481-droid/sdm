@@ -1,6 +1,6 @@
 /* ============================================================헤더 */
 header {
-    width:100%; max-width:1920px; height:70px; padding:0 200px;
+    width:100%; /* max-width:1920px;  */height:70px; padding:0 200px;
     display:flex; justify-content:space-between; align-items:center;
     position:fixed; z-index:999; 
     background-color: transparent;
@@ -11,7 +11,12 @@ header.scrolled { /* 헤더 스크롤 시 */
 }
 header .menu {width:32px;}
 header .menu img {width:100%;}
-header h1 {width:120px;}
+header h1 {
+    width:120px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
 header h1 a {}
 header h1 a img {width:100%;}
 header .snb {display:flex; gap:10px;}

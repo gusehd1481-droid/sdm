@@ -91,17 +91,19 @@ body {min-width:1920px;}
 #wrap main .for_you_box {padding-right:0;}
 #wrap main .for_you_box #for_you_wrap {}
 #wrap main .for_you_box #for_you_wrap > h1 {font-size:1.5rem; font-weight:700;}
-#wrap main .for_you_box #for_you_wrap .wide_box {}
-#wrap main .for_you_box #for_you_wrap .wide_box .photo_box {display:flex; flex-flow:row nowrap;}
-#wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {width:300px; aspect-ratio: 1/1; display:block; overflow:hidden;}
+#wrap main .for_you_box #for_you_wrap .wide_box {display:none; flex-flow:row nowrap; gap:60px; width:100%;}
+#wrap main .for_you_box #for_you_wrap .wide_box.active {display:flex;}
+#wrap main .for_you_box #for_you_wrap .wide_box .photo_box {} 
+#wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {width:640px; aspect-ratio: 1/1; display:block; overflow:hidden;}
 #wrap main .for_you_box #for_you_wrap .wide_box .photo_box a img {width:100%; }
 #wrap main .for_you_box #for_you_wrap .wide_box .photo_box .active {}
-#wrap main .for_you_box #for_you_wrap .wide_box .product_box {}
-#wrap main .for_you_box #for_you_wrap .wide_box .product_box .for_you_trouble_swiper{width:1120px;}
+#wrap main .for_you_box #for_you_wrap .wide_box .product_box {display:flex; flex-flow:column nowrap; justify-content: space-between;}
+#wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper {width:100%; max-width:1120px;}
 #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box {}
-#wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box h1 {font-size:1.5rem; font-weight:600; margin-bottom:20px;}
+#wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box h1 {font-size:1.5rem; font-weight:600; margin-bottom:20px; }
 #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box p {color:#777;}
-
+#wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar { position:static; height:1px; width:50%;}
+#wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar-drag {}
 
 /* ===================================================================================================================================신상품  */
 #wrap main .contents_box #new_wrap > h1 {font-size:1.5rem; font-weight:700;}

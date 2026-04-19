@@ -3,8 +3,9 @@ const bestToner = document.querySelector('.toner .best_toner_swiper');
 const bestAmpoule = document.querySelector('.ampoule .best_ampoule_swiper');
 const newToner = document.querySelector('.toner .new_toner_swiper');
 const newAmpoule = document.querySelector('.ampoule .new_ampoule_swiper');
-const foryouToner = document.querySelector('.for_you_trouble_swiper');
-console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouToner);
+const foryouTrouble = document.querySelector('.for_you_trouble_swiper');
+const foryouWhite = document.querySelector('.for_you_white_swiper');
+console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite);
 const heroSwiper = new Swiper(heroBnr,{
     autoplay:{
         delay:4000,
@@ -43,11 +44,18 @@ const newAmpouleSwiper = new Swiper(newAmpoule,{
         el:'#new_wrap .ampoule .swiper-scrollbar',
     },
 });
-const foryouTroubleSwiper = new Swiper(foryouToner,{
+const foryouTroubleSwiper = new Swiper(foryouTrouble,{
     slidesPerView:3.5,
     spaceBetween:20,
     scrollbar:{
-        el:'#for_you_wrap .swiper-scrollbar',
+        el:'#for_you_wrap .trouble_box .swiper-scrollbar',
+    },
+});
+const foryouWhiteSwiper = new Swiper(foryouWhite,{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#for_you_wrap .white_box .swiper-scrollbar',
     },
 });
 
@@ -73,3 +81,12 @@ $('.new_box .category a').on('click', function(e){
     if(idx === 0) newTonerSwiper.update();
     if(idx === 1) newAmpouleSwiper.update();
 });
+$('#for_you_wrap .action_btn_box .category a').on('click', function(e){
+    e.preventDefault();
+    let idx = $(this).index();
+    console.log(idx);
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#for_you_wrap .wide_box').removeClass('active').eq(idx).addClass('active');
+    if(idx === 0) foryouTrouble.update();
+    if(idx === 1) foryouWhite.update();
+})
