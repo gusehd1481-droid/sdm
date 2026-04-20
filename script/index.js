@@ -1,11 +1,15 @@
 const heroBnr = document.querySelector('.hero_bnr');
 const bestToner = document.querySelector('.toner .best_toner_swiper');
 const bestAmpoule = document.querySelector('.ampoule .best_ampoule_swiper');
+const bestLotion = document.querySelector('.best_lotion_swiper');
+const bestCream = document.querySelector('.best_cream_swiper');
+const bestSunCare = document.querySelector('.best_sun_care_swiper');
 const newToner = document.querySelector('.toner .new_toner_swiper');
 const newAmpoule = document.querySelector('.ampoule .new_ampoule_swiper');
 const foryouTrouble = document.querySelector('.for_you_trouble_swiper');
 const foryouWhite = document.querySelector('.for_you_white_swiper');
-console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite);
+const eventBeauty = document.querySelector('.beauty_1st_swiper');
+console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty);
 const heroSwiper = new Swiper(heroBnr,{
     autoplay:{
         delay:4000,
@@ -52,12 +56,22 @@ const foryouTroubleSwiper = new Swiper(foryouTrouble,{
     },
 });
 const foryouWhiteSwiper = new Swiper(foryouWhite,{
-    slidesPerView:3.5,
+    slidesPerView:3.1,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .white_box .swiper-scrollbar',
     },
 });
+const eventBeautySwiper = new Swiper(eventBeauty, {
+    direction:'vertical',
+    slidesPerView:2,
+    spaceBetween:20,
+    mousewheel:true,
+    pagination:{
+        prevEl:'event_box .vertical_box .prev',
+        nextEl:'event_box .vertical_box .next',
+    },
+})
 
 //===================================================================상품 슬라이드 product_slide 
 

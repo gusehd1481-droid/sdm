@@ -1,4 +1,4 @@
-body {min-width:1920px;}
+body {max-width:1920px;}
 #wrap {}
 #wrap header {}
 /* ======================================================================main */
@@ -88,10 +88,10 @@ body {min-width:1920px;}
 }
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info .price {}
 /* =================================================================================================================================== 포 유   */
-#wrap main .for_you_box {padding-right:0;}
+#wrap main .for_you_box {/* padding-right:0; */}
 #wrap main .for_you_box #for_you_wrap {}
 #wrap main .for_you_box #for_you_wrap > h1 {font-size:1.5rem; font-weight:700;}
-#wrap main .for_you_box #for_you_wrap .wide_box {display:none; flex-flow:row nowrap; gap:60px; width:100%;}
+#wrap main .for_you_box #for_you_wrap .wide_box {display:none; flex-flow:row nowrap; gap:60px; width:100%; max-width:1920px;}
 #wrap main .for_you_box #for_you_wrap .wide_box.active {display:flex;}
 #wrap main .for_you_box #for_you_wrap .wide_box .photo_box {} 
 #wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {width:640px; aspect-ratio: 1/1; display:block; overflow:hidden;}
@@ -104,9 +104,47 @@ body {min-width:1920px;}
 #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box p {color:#777;}
 #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar { position:static; height:1px; width:50%;}
 #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar-drag {}
-
-/* ===================================================================================================================================신상품  */
+/* =================================================================================================================================== 신상품  */
 #wrap main .contents_box #new_wrap > h1 {font-size:1.5rem; font-weight:700;}
+/* =================================================================================================================================== 이벤트  */
+#wrap main .event_box {background-color:#f9f9f9;}
+#wrap main .event_box #event_wrap {}
+#wrap main .event_box #event_wrap > h1 {font-size:2.0rem; font-weight:700;}
+#wrap main .event_box #event_wrap .action_btn_box_v2 {display:flex; gap:10px; margin:30px 0;}
+#wrap main .event_box #event_wrap .action_btn_box_v2 a {padding:6px 12px; border-radius:20px; background-color:#fff; font-size:0.88rem; font-size:500;}
+#wrap main .event_box #event_wrap .action_btn_box_v2 .active {color:#fff; background-color:#000;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide {display:flex; justify-content: space-between;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr { width:100%; max-width:840px; height:100%; max-height:600px; display:block; overflow:hidden;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr img {width:100%;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box {position:relative;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper { width:600px; height:600px; }
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper {}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide {background-color:#fff; padding:20px; border-radius:20px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info {display:flex; gap:20px;align-items:flex-end;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {
+    width:200px; height:250px; 
+}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {display:block; width:100%; }
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a .photo {
+    background-color:#f9f9f9; overflow:hidden; border-radius: 20px;
+}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a .photo img {width:100%;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc {width:340px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc h1 {font-size:1.18rem; font-weight:500; margin-bottom:10px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info {margin-bottom:50px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info .discount_rate {}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info em {}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info .price {}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box {display:flex; gap:20px; }
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .buy_btn {
+    border:1px solid #e9e9e9; width:100%; text-align:center; padding:15px 0; line-height:1; font-size:0.88rem;
+}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .like_btn {width:44px; height:44px; display:block; border:1px solid #e9e9e9;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .like_btn img {width:20px; margin:12px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .prev,
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .next {z-index:9999;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .prev {top:-50px;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .next {bottom:-50px;}
 /* ======================================================================footer */
 #wrap footer {}
 /* =================================================================================================================================== 인스타그램  */
