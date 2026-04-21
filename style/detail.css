@@ -1,36 +1,96 @@
+#wrap {width:100%; min-width:1920px; }
 header {
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
-    position:fixed;
+    position:sticky; top:0;
 }
-main {}
-main .product_container {padding:100px 200px;}
-main .product_container .product_detail {/* position:relative; */}
-main .product_container .product_detail .bread_crumb {margin-bottom:30px;}
-main .product_container .product_detail .bread_crumb a {}
-main .product_container .product_detail .thumbnails {display:flex; gap:20px;}
-main .product_container .product_detail .thumbnails .related_products {background-color: #f9f9f9; width:120px; height:120px;}
-main .product_container .product_detail .thumbnails .related_products a {}
-main .product_container .product_detail .thumbnails .related_products a img {width:100%;}
-main .product_container .product_detail .product_thumbnail {
+#wrap main {width:100%; min-width:1920px;}
+#wrap main .bread_crumb {margin-bottom:30px; display:flex; gap:20px; padding:20px 200px;}
+#wrap main .bread_crumb li {}
+#wrap main .bread_crumb li a {color:#888; font-size:0.81rem; font-weight:700;}
+#wrap main #detail_wrap {display:flex; flex-flow:row nowrap; justify-content:space-between; position:relative; width:100%; min-width:1920px; margin:0 200px;}
+#wrap main #detail_wrap .product_container {width:840px;}
+#wrap main #detail_wrap .product_container .product_detail {}
+#wrap main #detail_wrap .product_container .product_detail .thumbnails {display:flex; gap:20px;}
+#wrap main #detail_wrap .product_container .product_detail .thumbnails .related_products {background-color: #f9f9f9; width:120px; height:120px;}
+#wrap main #detail_wrap .product_container .product_detail .thumbnails .related_products a {}
+#wrap main #detail_wrap .product_container .product_detail .thumbnails .related_products a img {width:100%;}
+#wrap main #detail_wrap .product_container .product_detail .product_thumbnail {
     width:700px; height:840px; background-color: #f9f9f9;
 }
-main .product_container .product_detail .thumbnails .product_thumbnail .photo {
-    width:100%; height:100%;
-    background-image: url(../images/product/sdm_best_001.png);
-    background-position: center; background-size:70%; background-repeat: no-repeat;
+#wrap main #detail_wrap .product_container .product_detail .thumbnails .product_thumbnail .photo {width:450px; margin:0 auto; padding-top:25%;}
+#wrap main #detail_wrap .product_container .product_detail .thumbnails .product_thumbnail .photo img {width:100%;}
+/* ================================================================================================== 아래 상세 탭메뉴 */
+#wrap main #detail_wrap .product_container .tab_menu_box {display:flex; text-align:center; margin:100px 0 20px 0; }
+#wrap main #detail_wrap .product_container .tab_menu_box a {display:block; height:60px; width:calc(100% / 3); }
+#wrap main #detail_wrap .product_container .tab_menu_box > * {color:#a9a9a9; line-height:60px; font-size:0.88rem;}
+#wrap main #detail_wrap .product_container .tab_menu_box a.active {color:#000; background-color:#92C501}
+#wrap main #detail_wrap .product_container .tab_menu_box .detail {}
+#wrap main #detail_wrap .product_container .tab_menu_box .review {border:1px solid #a9a9a9;}
+#wrap main #detail_wrap .product_container .tab_menu_box .review span {color:#a9a9a9;}
+#wrap main #detail_wrap .product_container .tab_menu_box .inquiry {border:1px solid #a9a9a9; border-left:0;}
+#wrap main #detail_wrap .product_container .product_detail_img {}
+#wrap main #detail_wrap .product_container .product_detail_img a {display:block; width:100%;}
+#wrap main #detail_wrap .product_container .product_detail_img a img {width:100%;}
+
+/* ================================================================================================== 주문서 */
+
+#wrap main #detail_wrap .order_sheet {
+    position:fixed; right:200px;  border-radius: 20px;
+    background-color: #f9f9f9; width:100%; max-width:554px; padding:20px;
 }
-main .product_container .order_sheet {
-    /* position:fixed; right:200px; top:100px; */
-    background-color: #f9f9f9;
+#wrap main #detail_wrap .order_sheet .titles {}
+#wrap main #detail_wrap .order_sheet .titles .tags {}
+#wrap main #detail_wrap .order_sheet .titles .tags a {color:#777; font-size:0.81rem; font-weight:500;}
+#wrap main #detail_wrap .order_sheet .titles .title_wrap {display:flex; justify-content:space-between; align-items: center; margin:10px 0;}
+#wrap main #detail_wrap .order_sheet .titles .title_wrap h1 {font-size:1.5rem; font-weight:700; line-height:1;}
+#wrap main #detail_wrap .order_sheet .titles .title_wrap .like_btn {display:block; width:20px; height:20px;}
+#wrap main #detail_wrap .order_sheet .titles .title_wrap .like_btn img {width:100%;}
+#wrap main #detail_wrap .order_sheet .titles .review {display:flex; align-items: center; gap:5px;}
+#wrap main #detail_wrap .order_sheet .titles .review p {width:26px;}
+#wrap main #detail_wrap .order_sheet .titles .review p img {width:100%;}
+#wrap main #detail_wrap .order_sheet .titles .review a {color:#555; font-size:0.88rem;}
+/* ===============================================================================================================================price_wrap */
+#wrap main #detail_wrap .order_sheet .price_wrap {margin:30px 0;}
+#wrap main #detail_wrap .order_sheet .price_wrap > * {line-height:1;}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price {display:flex; margin-bottom:10px; align-items:center;}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price > p {width:50px; margin-right:20px;}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price .price_info {}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price .price_info .discount_rate {font-size:1.25rem; font-weight:700; color:#92C501;}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price .price_info em {color:#a9a9a9; text-decoration: line-through; margin:0 10px;}
+#wrap main #detail_wrap .order_sheet .price_wrap .sale_price .price_info .price {font-size:1.25rem; font-weight:700; display:inline-block;}
+#wrap main #detail_wrap .order_sheet .price_wrap .delivery_fee {}
+#wrap main #detail_wrap .order_sheet .price_wrap .delivery_fee > * {color:#555; font-size:0.81rem;}
+#wrap main #detail_wrap .order_sheet .price_wrap .delivery_fee p {display:inline-block; width:50px;  margin-right:20px;}
+#wrap main #detail_wrap .order_sheet .price_wrap .delivery_fee span {}
+/* ===============================================================================================================================.order_detail */
+#wrap main #detail_wrap .order_sheet .order_detail {}
+#wrap main #detail_wrap .order_sheet .order_detail > li {border-bottom:1px solid #d9d9d9; padding:10px 0; font-size:0.81rem;}
+#wrap main #detail_wrap .order_sheet .order_detail > li > * {/* font-size:0.81rem; */}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box {display:flex; justify-content:space-between; align-items:center;}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box > li {}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box .quantity_btn_box {}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box .quantity_btn_box button {width:30px; line-height:30px; border:1px solid #d9d9d9;}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box .quantity_btn_box .minus {}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box .quantity_btn_box .plus {}
+#wrap main #detail_wrap .order_sheet .order_detail > li .order_quantity_box .quantity_btn_box #quantity {
+    background-color:#f9f9f9; text-align: center; width:45px; line-height:30px;
+    margin:0 -3px 0 -3px;
+    border-top:1px  solid #d9d9d9;
+    border-bottom:1px  solid #d9d9d9; 
 }
-main .product_container .order_sheet .titles {}
-main .product_container .order_sheet .titles .tags {}
-main .product_container .order_sheet .titles .tags a {color:#777; font-size:0.81rem; font-weight:500;}
-main .product_container .order_sheet .titles .title_wrap {display:flex; justify-content:space-between;}
-main .product_container .order_sheet .titles .title_wrap h1 {font-size:1.5rem; font-weight:700;}
-main .product_container .order_sheet .titles .title_wrap .like_btn {display:block; width:24px; height:24px;}
-main .product_container .order_sheet .titles .title_wrap .like_btn img {width:100%;}
-main .product_container .order_sheet .titles .review {display:flex; align-items: center; gap:5px;}
-main .product_container .order_sheet .titles .review p {width:26px;}
-main .product_container .order_sheet .titles .review p img {width:100%;}
-main .product_container .order_sheet .titles .review a {color:#555; font-size:0.88rem;}
+#wrap main #detail_wrap .order_sheet .order_detail > li .total_box {display:flex; justify-content: space-between;}
+#wrap main #detail_wrap .order_sheet .order_detail > li .total_box li {font-size:0.94rem;}
+#wrap main #detail_wrap .order_sheet .order_detail > li .total_box li span {font-size:0.75rem; color:#777;}
+#wrap main #detail_wrap .order_sheet .order_btn {display:flex; gap:20px; text-align: center; margin:30px 0;}
+#wrap main #detail_wrap .order_sheet .order_btn a {display:block; font-size:0.94rem; width:100%; line-height:60px; font-size:0.94rem;}
+#wrap main #detail_wrap .order_sheet .order_btn .cart_btn {border:1px solid #d9d9d9;}
+#wrap main #detail_wrap .order_sheet .order_btn .buy_btn {background-color:#92C501; color:#fff;}
+/* ===============================================================================================================================.event_bnr_container */
+#wrap main #detail_wrap .order_sheet .event_bnr_container {}
+#wrap main #detail_wrap .order_sheet .event_bnr_container li {
+    height:80px; width:100%; background-position:center; background-size:cover;
+}
+#wrap main #detail_wrap .order_sheet .event_bnr_container li a {display:block;}
+#wrap main #detail_wrap .order_sheet .event_bnr_container li a img {width:100%;}
+#wrap main #detail_wrap .order_sheet .event_bnr_container .event_bnr {}
+

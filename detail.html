@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/detail.css">
+    <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
     <script src="./script/common.js" defer></script>
     <script src="./script/detail.js" defer></script>
 </head>
@@ -14,7 +15,7 @@
     <div id="wrap">
         <header>
             <p class="menu"><img src="./images/common/hamburger_menu.png" alt="메뉴"></p>
-            <h1><a href="#"><img src="./images/common/logo.png" alt="시드물"></a></h1>
+            <h1><a href="./index.html"><img src="./images/common/logo.png" alt="시드물"></a></h1>
             <div class="snb">
                 <a href="#" class="search_btn"><img src="./images/common/search.png" alt="검색하기"></a>
                 <a href="#" class="my_cart_btn"><img src="./images/common/my_cart.png" alt="장바구니"></a>
@@ -22,20 +23,32 @@
             </div>
         </header>
         <main>
-            <div class="product_container">
-                <div class="product_detail">
-                    <div class="bread_crumb">
-                        <a href="#">홈</a>
-                        <a href="#">기초</a>
-                        <a href="#">토너</a>
+            <ul class="bread_crumb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">기초</a></li>
+                <li><a href="#">토너</a></li>
+            </ul>
+            <div id="detail_wrap">
+                <div class="product_container">
+                    <div class="product_detail">
+                        <div class="thumbnails">
+                            <div class="related_products">
+                                <a href="#"><img src="./images/product/sdm_best_001.png" alt=""></a><!-- 임시이미지 패키지로 교체 -->
+                            </div>
+                            <div class="product_thumbnail">
+                                <p class="photo"><img src="./images/product/sdm_best_001.png" alt=""></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="thumbnails">
-                        <div class="related_products">
-                            <a href="#"><img src="./images/product/sdm_best_001.png" alt=""></a><!-- 임시이미지 패키지로 교체 -->
-                        </div>
-                        <div class="product_thumbnail">
-                            <p class="photo"></p>
-                        </div>
+                    <div class="tab_menu_box"><!-- 임시 -->
+                        <a href="#" class="detail active">제품 상세</a>
+                        <a href="#" class="review">리뷰(<span>11669</span>)</a>
+                        <a href="#" class="inquiry">제품 상세</a>
+                    </div>
+                    <div class="product_detail_img"><!-- 임시 -->
+                        <a href="#"><img src="./images/detail/sdm_detail_img.jpg" alt=""></a>
+                        <a href="#"><img src="./images/detail/sdm_detail_img.jpg" alt=""></a>
+                        <a href="#"><img src="./images/detail/sdm_detail_img.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="order_sheet">
@@ -54,11 +67,45 @@
                         </div>
                     </div>
                     <div class="price_wrap">
-                        <dl class="sale_price">
-                            <dt></dt>
-                            <dd></dd>
-                        </dl>
+                        <div class="sale_price">
+                            <p>판매가</p>
+                            <div class="price_info">
+                                <span class="discount_rate">77%</span><em>42,000원</em><p class="price">9,800원</p>
+                            </div>
+                        </div>
+                        <div class="delivery_fee">
+                            <p>배송비</p>
+                            <span>2,500원(20,000원 이상 구매 시 배송비 무료)</span>
+                        </div>
                     </div>
+                    <ul class="order_detail">
+                        <li>(최소주문수량 1개 / 최대주문수량 25개 이하)</li>
+                        <li>
+                            <ul class="order_quantity_box">
+                                <li>울트라 페이셜 히알루론산 토너</li>
+                                <li class="quantity_btn_box">
+                                    <button type="button" class="minus">-</button>
+                                    <input type="number" name="quantity" id="quantity" value="1">
+                                    <button type="button" class="plus">+</button>
+                                </li>
+                                <li>9,800원</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="total_box">
+                                <li>총 상품금액 <span>(수량)</span></li>
+                                <li>9,800원 <span>(1개)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="order_btn">
+                        <a href="#" class="cart_btn">장바구니</a>
+                        <a href="#" class="buy_btn">구매하기</a>
+                    </div>
+                    <ol class="event_bnr_container"> <!-- background-image 이미지 교체 필요함 (해상도 깨짐) -->
+                        <li class="event_bnr"><a href="#"><img src="./images/detail/sdm_detail_event_bnr_001.jpg" alt=""></a></li>
+                        <li class="event_bnr"><a href="#"><img src="./images/detail/sdm_detail_event_bnr_002.jpg" alt=""></a></li>
+                    </ol>
                 </div>
             </div>
         </main>
