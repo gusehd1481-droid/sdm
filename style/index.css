@@ -1,19 +1,20 @@
-body {max-width:1920px;}
-#wrap {}
+body {}
+#wrap {min-width:1920px;}
+#wrap > * {min-width:1920px;}
 #wrap header {}
 /* ======================================================================main */
 #wrap main {}
 /* ====================================================================== 히어로 배너 */
 #wrap main #hero_wrap {}
-#wrap main #hero_wrap .hero_bnr {width:100%; height:100vh;}
+#wrap main #hero_wrap .hero_bnr {width:100%; height:1200px;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper {}
-#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 200px;}
-#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-color:yellowgreen;}
-#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-color:aqua;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 200px; background-position: center; background-size:cover; }
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/photo/hero_001.png); }
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image:url(../images/photo/sdm_1515.png);}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
     display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end; position:absolute; left:200px; bottom:30%;
 }
-#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:200; font-size:1.25rem;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:300; font-size:1.25rem;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box h1 {font-weight:700; font-size:2.0rem;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {}
@@ -23,10 +24,10 @@ body {max-width:1920px;}
 #wrap main #hero_wrap .hero_bnr .next {right:200px;}
 #wrap main #hero_wrap .hero_bnr .bnr_player {
     display:flex; flex-flow:row nowrap; align-items:center; gap:10px;
-    position:absolute; bottom:26%; left:200px; z-index:999;
+    position:absolute; bottom:26%; left:200px; z-index:999; 
 }
-#wrap main #hero_wrap .hero_bnr .bnr_player .player_bar {width:330px; animation:player_bar 4s linear infinite; height:1px; background-color: #000;}
-#wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px;}
+#wrap main #hero_wrap .hero_bnr .bnr_player .player_bar {width:300px; height:1px; background-color: #000; animation:player_bar linear 4s infinite}
+#wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px; height:16px; }
 #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn img {width:100%;}
 /* ===================================================================================================================================베스트 셀러 */
 #wrap main .contents_box #best_wrap {}
@@ -57,10 +58,11 @@ body {max-width:1920px;}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .slide1 {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info {}
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {position:relative;}
-#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {display:block;}
+#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {display:block; }
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo {
     padding-top:50px;
-    width:100%; background-color:#f9f9f9; 
+    width:100%; background-color:#f9f9f9;  
+    display:flex; align-items: center; justify-content: center;
 }
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo img {width:100%;}
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail .ranking_box {
@@ -107,8 +109,8 @@ body {max-width:1920px;}
 /* =================================================================================================================================== 신상품  */
 #wrap main .contents_box #new_wrap > h1 {font-size:1.5rem; font-weight:700;}
 /* =================================================================================================================================== 이벤트  */
-#wrap main .event_box {background-color:#f9f9f9;}
-#wrap main .event_box #event_wrap {}
+#wrap main .contents_box.event_box {background-color:#f9f9f9; max-width:1920px; margin:0 auto; margin-top:100px;}
+#wrap main .event_box #event_wrap {max-width:1920px; margin:0 auto;}
 #wrap main .event_box #event_wrap > h1 {font-size:2.0rem; font-weight:700;}
 #wrap main .event_box #event_wrap .action_btn_box_v2 {display:flex; gap:10px; margin:30px 0;}
 #wrap main .event_box #event_wrap .action_btn_box_v2 a {padding:6px 12px; border-radius:20px; background-color:#fff; font-size:0.88rem; font-size:500;}

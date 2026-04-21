@@ -1,4 +1,4 @@
-const heroBnr = document.querySelector('.hero_bnr');
+
 const bestToner = document.querySelector('.toner .best_toner_swiper');
 const bestAmpoule = document.querySelector('.ampoule .best_ampoule_swiper');
 const bestLotion = document.querySelector('.best_lotion_swiper');
@@ -9,17 +9,24 @@ const newAmpoule = document.querySelector('.ampoule .new_ampoule_swiper');
 const foryouTrouble = document.querySelector('.for_you_trouble_swiper');
 const foryouWhite = document.querySelector('.for_you_white_swiper');
 const eventBeauty = document.querySelector('.beauty_1st_swiper');
-console.log(heroBnr,bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty);
+const hero = document.querySelector('#hero_wrap');
+const heroBnr = hero.querySelector('.hero_bnr');
+const bar = hero.querySelector('.player_bar');
+const btn = hero.querySelector('.pause_btn');
+console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,hero,heroBnr,bar,btn);
 const heroSwiper = new Swiper(heroBnr,{
+    loop:true,
     autoplay:{
         delay:4000,
+        disableOnInteraction: false,
     },
     effect:'fade',
     navigation:{
-        prevEl:'.hero_bnr .prev',
-        nextEl:'.hero_bnr .next',
+        prevEl: hero.querySelector('.prev'),
+        nextEl: hero.querySelector('.next'),
     }
 });
+
 const bestTonerSwiper = new Swiper(bestToner,{
     slidesPerView:5,
     spaceBetween:20,
@@ -56,7 +63,7 @@ const foryouTroubleSwiper = new Swiper(foryouTrouble,{
     },
 });
 const foryouWhiteSwiper = new Swiper(foryouWhite,{
-    slidesPerView:3.1,
+    slidesPerView:3.5,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .white_box .swiper-scrollbar',
