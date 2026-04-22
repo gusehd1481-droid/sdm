@@ -6,15 +6,17 @@ const bestCream = document.querySelector('.best_cream_swiper');
 const bestSunCare = document.querySelector('.best_sun_care_swiper');
 const newToner = document.querySelector('.toner .new_toner_swiper');
 const newAmpoule = document.querySelector('.ampoule .new_ampoule_swiper');
+const newLotion = document.querySelector('.lotion .new_lotion_swiper');
+const newCream = document.querySelector('.cream .new_cream_swiper');
+const newSunCare = document.querySelector('.suncare .new_sun_care_swiper');
 const foryouTrouble = document.querySelector('.for_you_trouble_swiper');
 const foryouWhite = document.querySelector('.for_you_white_swiper');
 const eventBeauty = document.querySelector('.beauty_1st_swiper');
-const hero = document.querySelector('#hero_wrap');
-const heroBnr = hero.querySelector('.hero_bnr');
-const bar = hero.querySelector('.player_bar');
-const btn = hero.querySelector('.pause_btn');
-console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,hero,heroBnr,bar,btn);
-const heroSwiper = new Swiper(heroBnr,{
+const heroBnr = document.querySelector('.hero_bnr');
+const bar = document.querySelector('#hero_wrap .player_bar');
+const pauseBtn = document.querySelector('#hero_wrap .pause_btn');
+console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,heroBnr,bar,pauseBtn);
+const heroSwiper = new Swiper('.hero_bnr',{
     loop:true,
     autoplay:{
         delay:4000,
@@ -22,11 +24,10 @@ const heroSwiper = new Swiper(heroBnr,{
     },
     effect:'fade',
     navigation:{
-        prevEl: hero.querySelector('.prev'),
-        nextEl: hero.querySelector('.next'),
+        prevEl: document.querySelector('#hero_bnr .prev'),
+        nextEl: document.querySelector('#hero_bnr .next'),
     }
 });
-
 const bestTonerSwiper = new Swiper(bestToner,{
     slidesPerView:5,
     spaceBetween:20,
@@ -41,6 +42,27 @@ const bestAmpouleSwiper = new Swiper(bestAmpoule,{
         el:'#best_wrap .ampoule .swiper-scrollbar',
     },
 });
+const bestLotionSwiper = new Swiper(bestLotion,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#best_wrap .lotion .swiper-scrollbar',
+    },
+});
+const bestCreamSwiper = new Swiper(bestCream,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#best_wrap .cream .swiper-scrollbar',
+    },
+});
+const bestSunCareSwiper = new Swiper(bestSunCare,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#best_wrap .cream .swiper-scrollbar',
+    },
+});
 const newTonerSwiper = new Swiper(newToner,{
     slidesPerView:5,
     spaceBetween:20,
@@ -53,6 +75,27 @@ const newAmpouleSwiper = new Swiper(newAmpoule,{
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .ampoule .swiper-scrollbar',
+    },
+});
+const newLotionSwiper = new Swiper(newLotion,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#new_wrap .lotion .swiper-scrollbar',
+    },
+});
+const newCreamSwiper = new Swiper(newCream,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#new_wrap .cream .swiper-scrollbar',
+    },
+});
+const newSunCareSwiper = new Swiper(newSunCare,{
+    slidesPerView:5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#new_wrap .suncare .swiper-scrollbar',
     },
 });
 const foryouTroubleSwiper = new Swiper(foryouTrouble,{
@@ -79,7 +122,6 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
         nextEl:'event_box .vertical_box .next',
     },
 })
-
 //===================================================================상품 슬라이드 product_slide 
 
 $('.best_box .category a').on('click', function(e){

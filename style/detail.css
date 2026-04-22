@@ -1,4 +1,6 @@
-#wrap {width:100%; min-width:1920px; }
+body {min-width:1920px;}
+#wrap {}
+#wrap > * {min-width:1920px;}
 header {
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     position:sticky; top:0;
@@ -7,7 +9,7 @@ header {
 #wrap main .bread_crumb {margin-bottom:30px; display:flex; gap:20px; padding:20px 200px;}
 #wrap main .bread_crumb li {}
 #wrap main .bread_crumb li a {color:#888; font-size:0.81rem; font-weight:700;}
-#wrap main #detail_wrap {display:flex; flex-flow:row nowrap; justify-content:space-between; position:relative; width:100%; min-width:1920px; margin:0 200px;}
+#wrap main #detail_wrap {display:flex; flex-flow:row nowrap; justify-content:space-between; position:relative; max-width:1920px; margin:0 200px; }
 #wrap main #detail_wrap .product_container {width:840px;}
 #wrap main #detail_wrap .product_container .product_detail {}
 #wrap main #detail_wrap .product_container .product_detail .thumbnails {display:flex; gap:20px;}
@@ -35,8 +37,8 @@ header {
 /* ================================================================================================== 주문서 */
 
 #wrap main #detail_wrap .order_sheet {
-    position:fixed; right:200px;  border-radius: 20px;
-    background-color: #f9f9f9; width:100%; max-width:554px; padding:20px;
+    position:sticky; /* right:200px; */  border-radius: 20px; top:0;
+    background-color: #f9f9f9; width:100%; max-width:554px; padding:20px; height:max-content;
 }
 #wrap main #detail_wrap .order_sheet .titles {}
 #wrap main #detail_wrap .order_sheet .titles .tags {}
