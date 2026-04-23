@@ -2,3 +2,37 @@ header {
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     position:sticky; top:0;
 }
+#wrap {}
+#wrap main {max-width:1024px; margin:0 auto; padding:180px 0;}
+#wrap main .login_box {display:flex; justify-content:space-between;}
+#wrap main .login_box .ad_box {width:500px; height:457px; overflow:hidden;}
+#wrap main .login_box .ad_box img {width:100%; padding-bottom:50px;}
+#wrap main .login_box .login {width:500px;}
+#wrap main .login_box .login h1 {width:100%; text-align: center;}
+#wrap main .login_box .login h1,
+#wrap main .login_box .login h1 span {font-size:1.5rem; font-weight:700; }
+#wrap main .login_box .login h1 span {margin-left:15px; color:#92c501;}
+#wrap main .login_box .login .tab_contents {display:flex; text-align: center; margin:20px 0; }
+#wrap main .login_box .login .tab_contents a {
+    font-size:0.94rem; display:block; width:calc(100% / 2); line-height:1;
+    padding:10px 0;
+}
+#wrap main .login_box .login .tab_contents a.active {background-color:#fff; color:#000; border:1px solid #000; border-bottom:0;}
+#wrap main .login_box .login .tab_contents a.inactive {background-color:#e3e3e3; color:#a9a9a9; border-bottom:1px solid #000;}
+#wrap main .login_box .login .tab_contents .member {}
+#wrap main .login_box .login .tab_contents .order_confirm {}
+#wrap main .login_box .login .input_container {}
+#wrap main .login_box .login .input_container ul {}
+#wrap main .login_box .login .input_container ul li {}
+#wrap main .login_box .login .input_container ul li input {}
+#wrap main .login_box .login .input_container ul li #id,
+#wrap main .login_box .login .input_container ul li #pw {padding:15px 20px; border:1px solid #e3e3e3; font-size:0.88rem; color:#777; width:100%;}
+#wrap main .login_box .login .input_container ul li #pw {margin-top:10px;}
+#wrap main .login_box .login .input_container ul li:nth-child(3) {margin:20px 0; }
+#wrap main .login_box .login .input_container ul li:nth-child(3) a {display:flex; flex-flow:row nowrap;}
+#wrap main .login_box .login .input_container ul li:nth-child(3) a img {width:20px; height:20px; display:block;}
+#wrap main .login_box .login .input_container ul li:nth-child(3) a span {font-size:0.75rem; margin-left:5px;}
+#wrap main .login_box .login .input_container ul li .login_btn {background-color: #92c501; width:100%; padding:10px 0; color:#fff;}
+#wrap main .login_box .login .additional_btn {text-align: center;}
+#wrap main .login_box .login .additional_btn a {font-size:0.88rem;}
+#wrap main .login_box .login .additional_btn a:first-child {}

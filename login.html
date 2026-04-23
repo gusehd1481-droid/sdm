@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/login.css">
     <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
     <script src="./script/common.js" defer></script>
+    <script src="./script/login.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -22,7 +23,40 @@
             </div>
         </header>
         <main>
-            
+            <div class="login_box">
+                <p class="ad_box">
+                    <img src="./images/photo/sdm_login.jpg" alt="">
+                </p>
+                <div class="login">
+                    <h1>시드물<span>로그인</span></h1>
+                    <div class="tab_contents">
+                        <a href="#" class="member active">시드물 회원</a>
+                        <a href="#" class="order_confirm inactive">비회원 주문 조회</a>
+                    </div>
+                    <form class="input_container" method="post">
+                        <ul>
+                            <li><input type="id" name="id" id="id" placeholder="아이디"></li>
+                            <li><input type="password" name="pw" id="pw" placeholder="비밀번호"></li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/common/checkbox.png" alt="">
+                                    <span>로그인 상태 유지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <button type="button" class="login_btn">로그인</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="additional_btn">
+                        <a href="#">회원가입</a>
+                        <a href="#">아이디/비밀번호 찾기</a>
+                    </div>
+                    <div class="additional_login_btn_box">
+                        <button type="button"><p><img src="./images/common/naver_login.png" alt=""></p>네이버 로그인</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="f_top">
