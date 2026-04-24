@@ -18,23 +18,44 @@ const newCream = document.querySelector('.cream .new_cream_swiper');
 const newSunCare = document.querySelector('.suncare .new_sun_care_swiper');
 const foryouTrouble = document.querySelector('.for_you_trouble_swiper');
 const foryouWhite = document.querySelector('.for_you_white_swiper');
+const foryouAntiAging = document.querySelector('.for_you_anti-aging_swiper');
+const foryouPores = document.querySelector('.for_you_pores_swiper');
+const foryouSunCare = document.querySelector('.for_you_sun_care_swiper');
 const eventBeauty = document.querySelector('.beauty_1st_swiper');
 const heroBnr = document.querySelector('.hero_bnr');
 const bar = document.querySelector('#hero_wrap .player_bar');
+const barFill = bar.querySelector('.player_fill');
 const pauseBtn = document.querySelector('#hero_wrap .pause_btn');
-console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,heroBnr,bar,pauseBtn);
+const playerIcon = pauseBtn.querySelector('img');
+console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,heroBnr,bar,pauseBtn,playerIcon,barFill,foryouAntiAging,foryouPores,foryouSunCare);
 const heroSwiper = new Swiper('.hero_bnr',{
     loop:true,
     autoplay:{
         delay:4000,
-        disableOnInteraction: false,
+        disableOnInteraction:false,
     },
     effect:'fade',
     navigation:{
-        prevEl: document.querySelector('#hero_bnr .prev'),
-        nextEl: document.querySelector('#hero_bnr .next'),
+        prevEl: document.querySelector('#hero_wrap .prev'),
+        nextEl: document.querySelector('#hero_wrap .next'),
     }
 });
+//console.log(heroSwiper.autoplay.running);
+let heroStatus = heroSwiper.autoplay.running;
+//console.log(heroStatus);
+pauseBtn.addEventListener('click', function(){
+    if(heroStatus == true){
+        heroSwiper.autoplay.pause();
+        playerIcon.src = 'images/common/play.png';
+        heroStatus = !heroStatus;
+    }
+    else if(heroStatus == false){
+        heroSwiper.autoplay.start();
+        playerIcon.src = 'images/common/pause.png';
+        heroStatus = !heroStatus;
+    }
+});
+
 const bestTonerSwiper = new Swiper(bestToner,{
     slidesPerView:5,
     spaceBetween:20,
@@ -67,7 +88,7 @@ const bestSunCareSwiper = new Swiper(bestSunCare,{
     slidesPerView:5,
     spaceBetween:20,
     scrollbar:{
-        el:'#best_wrap .cream .swiper-scrollbar',
+        el:'#best_wrap .suncare .swiper-scrollbar',
     },
 });
 const newTonerSwiper = new Swiper(newToner,{
@@ -119,14 +140,35 @@ const foryouWhiteSwiper = new Swiper(foryouWhite,{
         el:'#for_you_wrap .white_box .swiper-scrollbar',
     },
 });
+const foryouAntiSwiper = new Swiper(foryouAntiAging,{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#for_you_wrap .anti-aging_box .swiper-scrollbar',
+    },
+});
+const foryouSunCareSwiper = new Swiper(foryouSunCare,{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#for_you_wrap .sun_care_box .swiper-scrollbar',
+    },
+});
+const foryouPoresSwiper = new Swiper(foryouPores,{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    scrollbar:{
+        el:'#for_you_wrap .pores_box .swiper-scrollbar',
+    },
+});
 const eventBeautySwiper = new Swiper(eventBeauty, {
     direction:'vertical',
     slidesPerView:2,
     spaceBetween:20,
     mousewheel:true,
-    pagination:{
-        prevEl:'event_box .vertical_box .prev',
-        nextEl:'event_box .vertical_box .next',
+    navigation:{
+        prevEl:'.vertical_box .prev',
+        nextEl:'.vertical_box .next',
     },
 })
 //===================================================================상품 슬라이드 product_slide 
@@ -134,13 +176,28 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
 $('.best_box .category a').on('click', function(e){
     e.preventDefault();
     let idx = $(this).index();
-    console.log(idx);
+    //console.log(idx);
     $(this).addClass('active').siblings().removeClass('active');
     $('.best_box .product_slide').removeClass('active').eq(idx).addClass('active');
     // swiper 업데이트
     if(idx === 0) bestTonerSwiper.update();
     if(idx === 1) bestAmpouleSwiper.update();
+    if(idx === 2) bestLotionSwiper.update();
+    if(idx === 3) bestCreamSwiper.update();
+    if(idx === 4) bestSunCareSwiper.update();
 });
+$('#for_you_wrap .action_btn_box .category a').on('click', function(e){
+    e.preventDefault();
+    let idx = $(this).index();
+    console.log(idx);
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#for_you_wrap .wide_box').removeClass('active').eq(idx).addClass('active');
+    if(idx === 0) foryouTroubleSwiper.update();
+    if(idx === 1) foryouWhiteSwiper.update();
+    if(idx === 2) foryouAntiSwiper.update();
+    if(idx === 3) foryouPoresSwiper.update();
+    if(idx === 4) foryouSunCareSwiper.update();
+})
 $('.new_box .category a').on('click', function(e){
     e.preventDefault();
     let idx = $(this).index();
@@ -150,13 +207,8 @@ $('.new_box .category a').on('click', function(e){
     // swiper 업데이트
     if(idx === 0) newTonerSwiper.update();
     if(idx === 1) newAmpouleSwiper.update();
+    if(idx === 2) newLotionSwiper.update();
+    if(idx === 3) newCreamSwiper.update();
+    if(idx === 4) newSunCareSwiper.update();
 });
-$('#for_you_wrap .action_btn_box .category a').on('click', function(e){
-    e.preventDefault();
-    let idx = $(this).index();
-    console.log(idx);
-    $(this).addClass('active').siblings().removeClass('active');
-    $('#for_you_wrap .wide_box').removeClass('active').eq(idx).addClass('active');
-    if(idx === 0) foryouTrouble.update();
-    if(idx === 1) foryouWhite.update();
-})
+

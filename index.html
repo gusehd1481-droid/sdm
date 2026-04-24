@@ -31,7 +31,13 @@ The similarity to the actual commercial site is purely for design practice.
     <div id="wrap">
         <!-- header 시작 -->
         <header>
-            <p class="menu"><img src="./images/common/hamburger_menu.png" alt="메뉴"></p>
+            <a href="#" class="menu"><img src="./images/common/hamburger_menu.png" alt="메뉴"></a>
+            <!-- 햄버거 메뉴 클릭시 열림 -->
+            <div class="open_menu_bg">
+                <div class="side_wrap">
+
+                </div>
+            </div>
             <h1><a href="#"><img src="./images/common/logo.png" alt="시드물"></a></h1>
             <div class="snb">
                 <a href="#" class="search_btn"><img src="./images/common/search.png" alt="검색하기"></a>
@@ -60,7 +66,9 @@ The similarity to the actual commercial site is purely for design practice.
                     <div class="swiper-button-prev prev"></div>
                     <div class="swiper-button-next next"></div>
                     <div class="bnr_player"><!-- js로 수정 예정 -->
-                        <div class="player_bar"></div>
+                        <div class="player_bar">
+                            <div class="player_fill"></div>
+                        </div>
                         <button type="button" class="pause_btn"><img src="./images/common/pause.png" alt="광고배너멈추기"></button>
                     </div>
                 </div>
@@ -963,16 +971,16 @@ The similarity to the actual commercial site is purely for design practice.
                             <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
-                    <div class="wide_box lotion_box">
+                    <div class="wide_box anti-aging_box">
                         <div class="photo_box">
                             <a href="#" class="active"><img src="./images/photo/sdm_foryou_trouble.jpg" alt=""></a>
                         </div>
                         <div class="product_box">
                             <div class="desc_box">
-                                <h1>여드름/트러블 집중케어</h1>
+                                <h1>안티에이징 집중케어</h1>
                                 <p>동일 카테고리 상품 2개 이상 구매 시 배송비 무료!</p>
                             </div>
-                            <div class="swiper for_you_lotion_swiper">
+                            <div class="swiper for_you_anti-aging_swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide1">
                                         <div class="product_info">
@@ -1081,16 +1089,16 @@ The similarity to the actual commercial site is purely for design practice.
                             <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
-                    <div class="wide_box cream_box">
+                    <div class="wide_box pores_box">
                         <div class="photo_box">
                             <a href="#" class="active"><img src="./images/photo/sdm_foryou_trouble.jpg" alt=""></a>
                         </div>
                         <div class="product_box">
                             <div class="desc_box">
-                                <h1>여드름/트러블 집중케어</h1>
+                                <h1>모공/피지 집중케어</h1>
                                 <p>동일 카테고리 상품 2개 이상 구매 시 배송비 무료!</p>
                             </div>
-                            <div class="swiper for_you_cream_swiper">
+                            <div class="swiper for_you_pores_swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide1">
                                         <div class="product_info">
@@ -1205,7 +1213,7 @@ The similarity to the actual commercial site is purely for design practice.
                         </div>
                         <div class="product_box">
                             <div class="desc_box">
-                                <h1>여드름/트러블 집중케어</h1>
+                                <h1>자외선 차단 집중케어</h1>
                                 <p>동일 카테고리 상품 2개 이상 구매 시 배송비 무료!</p>
                             </div>
                             <div class="swiper for_you_sun_care_swiper">
