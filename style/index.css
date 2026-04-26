@@ -1,6 +1,6 @@
 body {}
-#wrap {min-width:1920px; overflow:hidden;}
-#wrap > * {min-width:1920px;}
+#wrap {max-width:1920px; overflow:hidden; margin:0 auto;}
+#wrap > * {max-width:1920px;}
 #wrap header {}
 /* ======================================================================main */
 #wrap main {}
@@ -116,9 +116,9 @@ body {}
 #wrap main .event_box #event_wrap .action_btn_box_v2 {display:flex; gap:10px; margin:30px 0;}
 #wrap main .event_box #event_wrap .action_btn_box_v2 a {padding:6px 12px; border-radius:20px; background-color:#fff; font-size:0.88rem; font-size:500;}
 #wrap main .event_box #event_wrap .action_btn_box_v2 .active {color:#fff; background-color:#000;}
-#wrap main .event_box #event_wrap .event_bnr_n_slide {display:flex; justify-content: space-between;}
-#wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr { width:100%; max-width:840px; height:100%; max-height:600px; display:block; overflow:hidden;}
-#wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr img {width:100%;}
+#wrap main .event_box #event_wrap .event_bnr_n_slide {display:flex; justify-content: space-between; }
+#wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr {display:block; background-image: url(../images/photo/event_bnr_001.png); width:100%; background-size: contain; background-repeat: no-repeat;}
+/* #wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr img {width:100%; height:100%;} */
 #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box {position:relative;}
 #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper { width:600px; height:600px; }
 #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper {}
@@ -146,6 +146,7 @@ body {}
 #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .buy_btn {
     border:1px solid #e9e9e9; width:100%; text-align:center; padding:15px 0; line-height:1; font-size:0.88rem;
 }
+#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .buy_btn:hover {background-color:#eee;}
 #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .btn_box .like_btn {
     width:44px; height:44px; display:block; border:1px solid #e9e9e9;
 }

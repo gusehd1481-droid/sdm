@@ -39,7 +39,7 @@ header {
     display:inline-block; content:'|'; font-size:12px; 
     margin:0 10px; color:#e3e3e3;
 }
-#wrap main .login_box .login .text_line {display:flex; align-items:center; gap:5px; justify-content: center; margin-bottom:20px;}
+#wrap main .login_box .login .text_line {display:flex; align-items:center; gap:5px; justify-content: center; margin-bottom:20px; padding-top:15px;}
 #wrap main .login_box .login .text_line em {display:block; width:100px; height:1px; background-color:#e3e3e3;}
 #wrap main .login_box .login .text_line span {font-size:0.88rem; color:#e3e3e3;}
 #wrap main .login_box .login .additional_login_btn_box {display:flex; gap:20px;}
