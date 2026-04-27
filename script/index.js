@@ -27,7 +27,9 @@ const bar = document.querySelector('#hero_wrap .player_bar');
 const barFill = bar.querySelector('.player_fill');
 const pauseBtn = document.querySelector('#hero_wrap .pause_btn');
 const playerIcon = pauseBtn.querySelector('img');
-console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,heroBnr,bar,pauseBtn,playerIcon,barFill,foryouAntiAging,foryouPores,foryouSunCare);
+const prevBtn = document.querySelector('#hero_wrap .prev');
+const nextBtn = document.querySelector('#hero_wrap .next');
+console.log(bestToner,bestAmpoule,newToner,newAmpoule,foryouTrouble,foryouWhite,eventBeauty,heroBnr,bar,pauseBtn,playerIcon,barFill,foryouAntiAging,foryouPores,foryouSunCare,prevBtn,nextBtn);
 const heroSwiper = new Swiper('.hero_bnr',{
     loop:true,
     autoplay:{
@@ -38,8 +40,8 @@ const heroSwiper = new Swiper('.hero_bnr',{
     navigation:{
         prevEl: document.querySelector('#hero_wrap .prev'),
         nextEl: document.querySelector('#hero_wrap .next'),
-    }
-});
+    },
+});    
 //console.log(heroSwiper.autoplay.running);
 let heroStatus = heroSwiper.autoplay.running;
 //console.log(heroStatus);

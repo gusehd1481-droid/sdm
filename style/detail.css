@@ -1,5 +1,5 @@
 body {min-width:1920px; }
-#wrap {margin:0 auto; max-width:1920px;}
+#wrap {margin:0 auto; min-width:1920px;}
 #wrap > * {max-width:1920px;}
 header {
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
@@ -32,8 +32,8 @@ header {
 #wrap main #detail_wrap .product_container .tab_menu_box .review span {color:#a9a9a9;}
 #wrap main #detail_wrap .product_container .tab_menu_box .inquiry {border:1px solid #a9a9a9; border-left:0;}
 #wrap main #detail_wrap .product_container .product_detail_img {}
-#wrap main #detail_wrap .product_container .product_detail_img a {display:block; width:100%;}
-#wrap main #detail_wrap .product_container .product_detail_img a img {width:100%;}
+#wrap main #detail_wrap .product_container .product_detail_img p {width:100%;}
+#wrap main #detail_wrap .product_container .product_detail_img p img {width:100%;}
 
 /* ================================================================================================== 주문서 */
 
