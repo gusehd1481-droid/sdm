@@ -191,3 +191,7 @@ body {}
         transform-origin:left;
     }
 }
+@keyframes buyBtn {
+    0% {}
+    100% {}
+}

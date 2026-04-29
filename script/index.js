@@ -41,6 +41,10 @@ const heroSwiper = new Swiper('.hero_bnr',{
         prevEl: document.querySelector('#hero_wrap .prev'),
         nextEl: document.querySelector('#hero_wrap .next'),
     },
+    pagination:{
+        el: document.querySelector('#hero_wrap .swiper-pagination'),
+        type:'progressbar',
+    },
 });    
 //console.log(heroSwiper.autoplay.running);
 let heroStatus = heroSwiper.autoplay.running;
