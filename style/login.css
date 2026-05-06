@@ -3,7 +3,7 @@ header {
     position:sticky; top:0;
 }
 #wrap {}
-#wrap main {max-width:1024px; margin:0 auto; padding:180px 0;}
+#wrap main { width:1024px; margin:0 auto; padding:180px 0;}
 #wrap main .login_box {display:flex; justify-content:space-between; }
 #wrap main .login_box .ad_box {width:500px; height:500px; overflow:hidden;}
 #wrap main .login_box .ad_box img {width:100%; padding-bottom:50px;}

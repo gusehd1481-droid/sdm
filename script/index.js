@@ -61,7 +61,6 @@ pauseBtn.addEventListener('click', function(){
         heroStatus = !heroStatus;
     }
 });
-
 const bestTonerSwiper = new Swiper(bestToner,{
     slidesPerView:5,
     spaceBetween:20,
@@ -188,7 +187,7 @@ $('.best_box .category a').on('click', function(e){
     // swiper 업데이트
     if(idx === 0) bestTonerSwiper.update();
     if(idx === 1) bestAmpouleSwiper.update();
-    if(idx === 2) bestLotionSwiper.update();
+    if(idx === 2) bestLotionSwiper.update();    
     if(idx === 3) bestCreamSwiper.update();
     if(idx === 4) bestSunCareSwiper.update();
 });
@@ -217,4 +216,3 @@ $('.new_box .category a').on('click', function(e){
     if(idx === 3) newCreamSwiper.update();
     if(idx === 4) newSunCareSwiper.update();
 });
-
