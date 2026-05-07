@@ -1,6 +1,6 @@
 body {}
 #wrap {width:100%; max-width:1920px; overflow:hidden; margin:0 auto;}
-#wrap > * {width:100%; min-width:1920px;}
+#wrap > * {min-width:350px;}
 #wrap header {}
 /* ======================================================================main */
 #wrap main {}

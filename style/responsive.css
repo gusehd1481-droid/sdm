@@ -1,3 +1,22 @@
 /* index.html */
 /* detail.html */
 /* login.html */
+/* common */
+@media screen and (max-width:1024px) {
+    header {
+        padding:0 20px;
+    }
+    footer {
+        padding:60px 20px;
+    }
+    footer .f_bottom .company_info li {
+
+    }
+}
+@media screen and (max-width:460px) {
+    header h1 {
+        width:80px;
+    }
+    header .menu {width:16px;}
+    header .snb p {}
+}
