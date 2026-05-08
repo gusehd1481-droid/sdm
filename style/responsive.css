@@ -2,21 +2,55 @@
 /* detail.html */
 /* login.html */
 /* common */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1324px) {
     header {
         padding:0 20px;
     }
+    /* ==========================================================================================================================================히어로 배너 */
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 20px; background-position:bottom right; background-size:cover;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/photo/hero_001.png); }
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image:url(../images/photo/hero_002.png);}
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
+        display:flex; flex-flow:column nowrap; gap:10px; justify-content:flex-end; position:absolute; left:20px; bottom:30%;
+    }
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box p {font-weight:300; font-size:1.25rem;}
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box h1 {font-weight:700; font-size:2.0rem;}
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {}
+    #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {}
+    #wrap main #hero_wrap .hero_bnr .swiper-button-prev,
+    #wrap main #hero_wrap .hero_bnr .swiper-button-next {color:#000; width:16px; z-index:999; }
+    #wrap main #hero_wrap .hero_bnr .prev {left:20px;}
+    #wrap main #hero_wrap .hero_bnr .next {right:20px;}
+    #wrap main #hero_wrap .hero_bnr .bnr_player {
+        display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;  gap:10px;
+        position:absolute; bottom:25%; left:20px; z-index:999; 
+    }
+    #wrap main #hero_wrap .hero_bnr .bnr_player .swiper-pagination {width:284px; height:1px; position:static;}
+    #wrap main #hero_wrap .hero_bnr .bnr_player .swiper-pagination-progressbar-fill {background-color:#000;}
+    #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px; height:16px;}
+    #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn img {width:100%;}
+    /* ============================================================베스트 셀러,  포유, 신상품 공통 선택자 */
+    #wrap main .contents_box {padding:100px 20px;}
+    /* =======================================================================================================================================인스타그램 */
+    #wrap main .instagram {padding:60px 20px;}
+    #wrap main .instagram .feed_container a {
+        width:calc((100% - 20px) / 2);
+    }
+    /* ==========================================================================================================================================푸터 */
     footer {
         padding:60px 20px;
     }
-    footer .f_bottom .company_info li {
-
-    }
+    footer .f_bottom .company_info li {}
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:700px) {
     header h1 {
         width:80px;
     }
     header .menu {width:16px;}
     header .snb p {}
+    /* =============================================================================================================================================히어로 배너 */
+    #wrap main #hero_wrap .hero_bnr .swiper-button-prev,
+    #wrap main #hero_wrap .hero_bnr .swiper-button-next {display:none;}
+    /* ======================================================================================================================================== 푸터 */
+
 }

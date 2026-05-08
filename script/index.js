@@ -62,10 +62,21 @@ pauseBtn.addEventListener('click', function(){
     }
 });
 const bestTonerSwiper = new Swiper(bestToner,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#best_wrap .toner .swiper-scrollbar',
+    },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
     },
 });
 const bestAmpouleSwiper = new Swiper(bestAmpoule,{

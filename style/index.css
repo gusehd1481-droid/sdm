@@ -8,7 +8,7 @@ body {}
 #wrap main #hero_wrap {}
 #wrap main #hero_wrap .hero_bnr {width:100%; height:100vh;} /* 반응형 시 제품 위치 중앙에 오도록 */
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper {}
-#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 200px; background-position:bottom right; background-size:cover;}
+#wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {background-position:bottom right; background-size:cover;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/photo/hero_001.png); }
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image:url(../images/photo/hero_002.png);}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide .txt_box {
@@ -31,6 +31,7 @@ body {}
 #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn {width:16px; height:16px;}
 #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn img {width:100%;}
 /* ===================================================================================================================================베스트 셀러 */
+#wrap main .contents_box {}/* 인스타부터 반응형 하려고 걸어 둔거. !!!!!!!!!!!!! 반응형 시 해제 필요함 !!!!!!!!!!!!!! */
 #wrap main .contents_box #best_wrap {}
 #wrap main .contents_box #best_wrap > h1 {font-size:1.5rem; font-weight:700;}
 /* ============================================================베스트 셀러,  포유, 신상품 공통 선택자 */
@@ -52,13 +53,13 @@ body {}
 #wrap main .contents_box .product_slide { display:none;}
 #wrap main .contents_box .product_slide.active {display:block;}
 #wrap main .contents_box .ampoule {display:none;}
-#wrap main .contents_box .product_slide .swiper {}
+#wrap main .contents_box .product_slide .swiper {width:100%;}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide:last-child {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .slide1 {}
 #wrap main .contents_box .product_slide .swiper .swiper-wrapper .swiper-slide .product_info {}
-#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {position:relative; background-color:#f9f9f9;   height:400px;} /* 반응형시 수정 */
+#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {position:relative; background-color:#f9f9f9;   /* height:400px; */} /* 반응형시 수정 */
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {display:flex; justify-content: center; align-items:flex-end;}
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo {
     padding-top:30%; 
@@ -166,9 +167,9 @@ body {}
 /* =================================================================================================================================== 인스타그램  */
 #wrap main .instagram {padding:60px 200px; text-align:center;}
 #wrap main .instagram h1 {font-size:2.0rem; font-weight:700; padding:30px 0;}
-#wrap main .instagram .feed_container {width:100%; max-width:1920px; display:flex; flex-flow:row wrap; gap:10px; margin:0 auto;}
+#wrap main .instagram .feed_container {width:100%; display:flex; flex-flow:row wrap; gap:10px; margin:0 auto;}
 #wrap main .instagram .feed_container a {
-    display:block; width:calc((100% - 20px) / 3); max-width:500px; /* 반응형시 수정 */
+    display:block; width:calc((100% - 20px) / 3);  /* 반응형시 수정 */
     aspect-ratio: 1/1; 
     background-position:center; background-size: cover;
 } 
