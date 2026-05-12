@@ -36,6 +36,18 @@
     #wrap main .for_you_box #for_you_wrap .wide_box .photo_box {height:100%;} 
     #wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {min-width:510px;}
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper {}
+    /* =======================================================================================================================================이벤트 */
+    #wrap main .event_box #event_wrap .event_bnr_n_slide {flex-flow:column nowrap;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr {
+    display:block; /* background-image: url(../images/photo/sdm_event_bnr_001.jpg);  */
+    width:100%; max-width:auto;
+    /* background-size:cover; background-repeat: no-repeat; overflow:hidden; background-position:center center; */
+}
+    #wrap main .evnet_box #event_wrap .event_bnr_n_slide .vertical_box {}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper { /* max-width:0; max-height:0; */}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper {display:flex; flex-flow:row nowrap;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .prev,
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .next {display:none;}
     /* =======================================================================================================================================인스타그램 */
     #wrap main .instagram {padding:60px 20px;}
     #wrap main .instagram .feed_container a {
@@ -106,10 +118,6 @@
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar { position:static; height:1px; width:100%;}
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box { gap:30px;}
     /* ======================================================================================================================================== 이벤트 */
-    #wrap main .event_box #event_wrap .event_bnr_n_slide {display:flex; flex-flow:column nowrap; justify-content: space-between; }
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper { max-width:0; max-height:0; }
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .prev,
-#wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .next {display:none;}
     /* ======================================================================================================================================== 푸터 */
     footer .f_bottom .company_info {margin-bottom:30px;}
     footer .f_bottom {flex-flow:column nowrap;}
