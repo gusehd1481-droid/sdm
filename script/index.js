@@ -80,111 +80,240 @@ const bestTonerSwiper = new Swiper(bestToner,{
     },
 });
 const bestAmpouleSwiper = new Swiper(bestAmpoule,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#best_wrap .ampoule .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const bestLotionSwiper = new Swiper(bestLotion,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#best_wrap .lotion .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const bestCreamSwiper = new Swiper(bestCream,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#best_wrap .cream .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const bestSunCareSwiper = new Swiper(bestSunCare,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#best_wrap .suncare .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const newTonerSwiper = new Swiper(newToner,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .toner .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const newAmpouleSwiper = new Swiper(newAmpoule,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .ampoule .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const newLotionSwiper = new Swiper(newLotion,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .lotion .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const newCreamSwiper = new Swiper(newCream,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .cream .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const newSunCareSwiper = new Swiper(newSunCare,{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
     scrollbar:{
         el:'#new_wrap .suncare .swiper-scrollbar',
     },
+    breakpoints:{
+        600:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:3,
+        },
+        1222:{
+            slidesPerView:5,
+        },
+    },
 });
 const foryouTroubleSwiper = new Swiper(foryouTrouble,{
-    slidesPerView:3.5,
+    slidesPerView:2,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .trouble_box .swiper-scrollbar',
     },
+    breakpoints:{
+        700:{
+            slidesPerView:3.5,
+        },
+    },
 });
 const foryouWhiteSwiper = new Swiper(foryouWhite,{
-    slidesPerView:3.5,
+    slidesPerView:2,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .white_box .swiper-scrollbar',
     },
+    breakpoints:{
+        700:{
+            slidesPerView:3.5,
+        },
+    },
 });
 const foryouAntiSwiper = new Swiper(foryouAntiAging,{
-    slidesPerView:3.5,
+    slidesPerView:2,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .anti-aging_box .swiper-scrollbar',
     },
+    breakpoints:{
+        700:{
+            slidesPerView:3.5,
+        },
+    },
 });
 const foryouSunCareSwiper = new Swiper(foryouSunCare,{
-    slidesPerView:3.5,
+    slidesPerView:2,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .sun_care_box .swiper-scrollbar',
     },
+    breakpoints:{
+        700:{
+            slidesPerView:3.5,
+        },
+    },
 });
 const foryouPoresSwiper = new Swiper(foryouPores,{
-    slidesPerView:3.5,
+    slidesPerView:2,
     spaceBetween:20,
     scrollbar:{
         el:'#for_you_wrap .pores_box .swiper-scrollbar',
     },
+    breakpoints:{
+        700:{
+            slidesPerView:3.5,
+        },
+    },
 });
 const eventBeautySwiper = new Swiper(eventBeauty, {
-    direction:'vertical',
+    direction:'horizontal',
     slidesPerView:2,
     spaceBetween:20,
     mousewheel:true,
     navigation:{
         prevEl:'.vertical_box .prev',
         nextEl:'.vertical_box .next',
+    },
+    breakpoints:{
+        700:{
+            direction:'vertical',
+        },
     },
 })
 //===================================================================상품 슬라이드 product_slide 
@@ -205,7 +334,7 @@ $('.best_box .category a').on('click', function(e){
 $('#for_you_wrap .action_btn_box .category a').on('click', function(e){
     e.preventDefault();
     let idx = $(this).index();
-    console.log(idx);
+    //console.log(idx);
     $(this).addClass('active').siblings().removeClass('active');
     $('#for_you_wrap .wide_box').removeClass('active').eq(idx).addClass('active');
     if(idx === 0) foryouTroubleSwiper.update();

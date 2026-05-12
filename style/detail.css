@@ -1,6 +1,6 @@
-body {width:100%; min-width:1920px; }
-#wrap {margin:0 auto; min-width:1920px;}
-#wrap > * {max-width:1920px;}
+body {}
+#wrap {width:100%; max-width:1920px; overflow:hidden; margin:0 auto;}
+#wrap > * {min-width:350px;}
 header {
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     position:sticky; top:0;
