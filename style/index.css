@@ -84,7 +84,7 @@ body {}
     font-size:0.88rem; color:#888;
 }
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .product_desc h1 {margin:10px 0;}
-#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info {display:flex; gap:10px; align-items:center;}
+#wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info {display:flex; gap:10px; align-items:center; }
 #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .product_desc .price_info .discount_rate {
     font-weight:700; color:#92C501; 
 }
