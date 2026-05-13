@@ -305,7 +305,7 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
     direction:'horizontal',
     slidesPerView:1,
     spaceBetween:20,
-    mousewheel:false,
+    mousewheel:true,
     navigation:{
         prevEl:'.vertical_box .prev',
         nextEl:'.vertical_box .next',

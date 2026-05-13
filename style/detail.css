@@ -34,9 +34,7 @@ header {
 #wrap main #detail_wrap .product_container .product_detail_img {}
 #wrap main #detail_wrap .product_container .product_detail_img p {width:100%;}
 #wrap main #detail_wrap .product_container .product_detail_img p img {width:100%;}
-
 /* ================================================================================================== 주문서 */
-
 #wrap main #detail_wrap .order_sheet {
     position:sticky; /* right:200px; */  border-radius: 20px; top:100px;
     background-color: #fbfbfb; width:100%; max-width:554px; padding:20px; height:max-content;

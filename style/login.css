@@ -33,6 +33,7 @@ header {
 #wrap main .login_box .login .input_container ul li:nth-child(3) a img {width:20px; height:20px; display:block;}
 #wrap main .login_box .login .input_container ul li:nth-child(3) a span {font-size:0.75rem; margin-left:5px;}
 #wrap main .login_box .login .input_container ul li .login_btn {background-color: #92c501; width:100%; padding:10px 0; color:#fff;}
+#wrap main .login_box .login .input_container ul li .login_btn:hover {background-color:#80AD01;}
 #wrap main .login_box .login .additional_btn {text-align:center;  padding:10px 0 20px 0;}
 #wrap main .login_box .login .additional_btn a {font-size:0.88rem; line-height:1;}
 #wrap main .login_box .login .additional_btn a:first-child::after {
