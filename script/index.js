@@ -303,9 +303,9 @@ const foryouPoresSwiper = new Swiper(foryouPores,{
 });
 const eventBeautySwiper = new Swiper(eventBeauty, {
     direction:'horizontal',
-    slidesPerView:2,
+    slidesPerView:1,
     spaceBetween:20,
-    mousewheel:true,
+    mousewheel:false,
     navigation:{
         prevEl:'.vertical_box .prev',
         nextEl:'.vertical_box .next',
@@ -315,6 +315,7 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
             slidesPerView:2,
         },
         1324:{
+            slidesPerView:2,
             direction:'vertical',
             mousewheel:true,
         },

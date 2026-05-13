@@ -1,11 +1,52 @@
-/* index.html */
 /* detail.html */
-/* login.html */
-/* common */
+/* ==========================================================================================================================================================================common */
 @media screen and (max-width:1324px) {
     header {
         padding:0 20px;
     }
+    /* ==========================================================================================================================================푸터 */
+    footer {
+        padding:60px 20px;
+    }
+    footer .f_bottom .company_info li {}
+}
+@media screen and (max-width:700px) {
+    #wrap .login_main {margin:0 auto; padding:60px 0;}
+    header h1 {
+    width:80px;
+    }
+    header .menu {width:16px;}
+    header .snb p {}
+    /* ======================================================================================================================================== 푸터 */
+    footer .f_bottom .company_info {margin-bottom:30px;}
+    footer .f_bottom .company_info li {font-size:0.75rem; margin-bottom:10px;}
+    footer .f_bottom {flex-flow:column nowrap;}
+    footer .f_bottom .fnb {flex-flow:row nowrap;}
+}
+/* ==========================================================================================================================================================================index.html */
+@media screen and (max-width:1600px) {
+    #wrap main .event_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail {
+        width:100%; height:100%;
+    }
+    #wrap main .event_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail > a {
+        width:100%; height:100%;
+    }
+    #wrap main .event_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo {
+    padding-top:0; 
+    width:100%;   
+    display:flex; align-items: center; justify-content: center;
+    }
+    /* #wrap main .event_box #event_wrap .event_bnr_n_slide {flex-flow:column nowrap; gap:50px;} */
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr {
+    display:block; width:100%; max-width:auto; 
+    }
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box {position:relative; width:100%; max-height:600px;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper {width:100%; max-height:600px;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper {display:flex; flex-flow:row nowrap;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide {background-color:#fff; padding:20px; border-radius:20px;}
+    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper .swiper-slide .product_info {display:flex; gap:20px; align-items:flex-end; height:100%;}
+}
+@media screen and (max-width:1324px) { /* ================================================================================================================================1324px */
     /* ==========================================================================================================================================히어로 배너 */
     #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {padding:250px 20px; background-position:bottom right; background-size:cover;}
     #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/photo/hero_001.png);}
@@ -31,40 +72,20 @@
     padding-top:20%; 
     width:90%;   
     display:flex; align-items: center; justify-content: center;
-}
+    }
     /* =======================================================================================================================================포유 */
+    #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box h1 {font-size:1.5rem; font-weight:600; margin-bottom:0px; }
     #wrap main .for_you_box #for_you_wrap .wide_box .photo_box {height:100%;} 
     #wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {min-width:510px;}
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper {}
     /* =======================================================================================================================================이벤트 */
-    #wrap main .event_box #event_wrap .event_bnr_n_slide {flex-flow:column nowrap;}
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .event_bnr {
-    display:block; /* background-image: url(../images/photo/sdm_event_bnr_001.jpg);  */
-    width:100%; max-width:auto;
-    /* background-size:cover; background-repeat: no-repeat; overflow:hidden; background-position:center center; */
-}
-    #wrap main .evnet_box #event_wrap .event_bnr_n_slide .vertical_box {}
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper { /* max-width:0; max-height:0; */}
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .beauty_1st_swiper .swiper-wrapper {display:flex; flex-flow:row nowrap;}
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .prev,
-    #wrap main .event_box #event_wrap .event_bnr_n_slide .vertical_box .next {display:none;}
     /* =======================================================================================================================================인스타그램 */
     #wrap main .instagram {padding:60px 20px;}
     #wrap main .instagram .feed_container a {
         width:calc((100% - 10px) / 2);
     }
-    /* ==========================================================================================================================================푸터 */
-    footer {
-        padding:60px 20px;
-    }
-    footer .f_bottom .company_info li {}
 }
-@media screen and (max-width:700px) {
-    header h1 {
-        width:80px;
-    }
-    header .menu {width:16px;}
-    header .snb p {}
+@media screen and (max-width:700px) {/* =================================================================================================================================700px */
     /* =============================================================================================================================================히어로 배너 */
     #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {}
     #wrap main #hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/photo/hero_001.png); background-position:85% 100%;}
@@ -87,10 +108,14 @@
     #wrap main #hero_wrap .hero_bnr .bnr_player .pause_btn img {width:100%;}
     #wrap main #hero_wrap .hero_bnr .swiper-button-prev,
     #wrap main #hero_wrap .hero_bnr .swiper-button-next {display:none;}
+    /* ======================================================================================================================================== 베스트 */
+    #wrap main .contents_box #best_wrap > h1 {font-size:1.25rem;}
     /* ======================================================================================================================================== 베스트, 포유, 신상품 공통 선택자 */
+    #wrap main .contents_box .action_btn_box .more {display:block; width:16px;}
+    #wrap main .contents_box .action_btn_box .more img {width:100%;} 
     #wrap main .contents_box .action_btn_box {margin:10px 0 40px 0;}
     #wrap main .contents_box .action_btn_box .category {display:flex; gap:30px;}
-    #wrap main .contents_box .action_btn_box .category a {display:block; padding:10px 0; width:max-content; font-size:1.0rem; color:#777777;}
+    #wrap main .contents_box .action_btn_box .category a {display:block; padding:10px 0; width:max-content; font-size:0.88rem; color:#777777;}
     #wrap main .contents_box .swiper .swiper-wrapper .swiper-slide .product_info .thumbnail a .photo {
     padding-top:10%; 
     width:90%;   
@@ -100,7 +125,10 @@
     left:0; bottom:-40px; height:1px; width:100%;
     }
     /* ======================================================================================================================================== 포유 */
+    #wrap main .contents_box #for_you_wrap > h1 {font-size:1.25rem;}
     #wrap main .for_you_box #for_you_wrap .wide_box {display:none; flex-flow:column nowrap; gap:60px; width:100%;}
+    #wrap main .for_you_box #for_you_wrap .wide_box .photo_box {width:100%; height:100%;} 
+    #wrap main .for_you_box #for_you_wrap .wide_box .photo_box a {width:100%;}
     #wrap main .for_you_box .swiper .swiper-wrapper .swiper-slide .product_info .product_desc .desc {
     font-size:0.75rem; color:#888;
     }
@@ -117,9 +145,15 @@
     }
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box .swiper-scrollbar { position:static; height:1px; width:100%;}
     #wrap main .for_you_box #for_you_wrap .wide_box .product_box { gap:30px;}
+    #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box h1 {font-size:1.13rem; font-weight:600; margin-bottom:10px;}
+    #wrap main .for_you_box #for_you_wrap .wide_box .product_box .desc_box p {color:#777; font-size:1.0rem;}
+    /* ======================================================================================================================================== 신상품 */
+    #wrap main .contents_box #new_wrap > h1 {font-size:1.25rem;}
     /* ======================================================================================================================================== 이벤트 */
-    /* ======================================================================================================================================== 푸터 */
-    footer .f_bottom .company_info {margin-bottom:30px;}
-    footer .f_bottom {flex-flow:column nowrap;}
-    footer .f_bottom .fnb {flex-flow:row nowrap;}
+}
+/* ================================================================================================================================================================login.html */
+@media screen and (max-width:1024px) {
+    #wrap main { width:100%; margin:0 auto; }
+    #wrap main .login_box .ad_box {display:none;}
+    #wrap main .login_box .login {width:500px; height:max-content; margin:0 auto;}
 }
