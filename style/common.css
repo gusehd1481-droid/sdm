@@ -16,7 +16,7 @@ header.scrolled { /* 헤더 스크롤 시 */
     background-color: #fff;  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
 }
 header .menu {display:block; width:32px;}
-header .menu img {width:100%;}
+header .menu img {width:100%; display:block;}
 header .open_menu_bg {
     width:100%; height:100vh; background:rgba(0,0,0,0.25); position:fixed; top:0; left:0; z-index:999;
     display:none;
@@ -60,7 +60,7 @@ header .snb {display:flex; gap:10px;}
 header .snb p {width:16px;}
 header .snb p img {width:100%;}
 /* ============================================================푸터 */
-footer {padding:80px 200px; border-top:1px solid #d9d9d9;}
+footer {padding:80px 200px; border-top:1px solid #d9d9d9; margin:0 auto;}
 footer .f_top {margin-bottom:30px; display:flex; justify-content:space-between;}
 footer .f_top .logo {display:flex; align-items:flex-end; gap:3px;}
 footer .f_top .logo a {display:block; width:134px;}

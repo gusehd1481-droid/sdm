@@ -320,7 +320,6 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
         1324:{
             slidesPerView:2,
             direction:'vertical',
-            mousewheel:true,
         },
     },
 })

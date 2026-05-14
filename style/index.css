@@ -6,7 +6,7 @@ body {}
 #wrap main {}
 /* ====================================================================== 히어로 배너 */
 #wrap main #hero_wrap {}
-#wrap main #hero_wrap .hero_bnr {width:100%; height:100vh;}
+#wrap main #hero_wrap .hero_bnr {width:100%; height:100vh; max-height:2000px;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper {}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {background-position:bottom right; background-size:cover;}
 #wrap main #hero_wrap .hero_bnr .swiper-wrapper .swiper-slide > a {display:block; width:100%; height:100%;}
