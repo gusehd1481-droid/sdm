@@ -44,7 +44,7 @@ body {}
 #wrap main #detail_wrap .product_container .tab_menu_box .inquiry {border:1px solid #a9a9a9; border-left:0;}
 #wrap main #detail_wrap .product_container .product_detail_img {}
 #wrap main #detail_wrap .product_container .product_detail_img p {width:100%;}
-#wrap main #detail_wrap .product_container .product_detail_img p img {width:100%;}
+#wrap main #detail_wrap .product_container .product_detail_img p img {width:100%; display:block;}
 /* ============================================================================================================================================ 주문서 */
 #wrap main #detail_wrap .order_sheet {
     position:sticky; border-radius:20px; top:100px; right:0;
@@ -105,3 +105,32 @@ body {}
 #wrap main #detail_wrap .order_sheet .event_bnr_container li a {display:block;}
 #wrap main #detail_wrap .order_sheet .event_bnr_container li a img {width:100%;}
 #wrap main #detail_wrap .order_sheet .event_bnr_container .event_bnr {}
+/* ==========================================================================================================================모바일에서 보이는 영역 - 2 */
+#wrap main #detail_wrap .m_order_sheet {
+    display:none; position:fixed; bottom:0; left:0; z-index:997; opacity:1;
+    background-color:#fff; width:100%; padding:15px; height:25vh; border-top:1px solid rgba(0,0,0,0.1);
+}
+#wrap main #detail_wrap .m_order_sheet.none {opacity:0;}
+#wrap main #detail_wrap .m_order_sheet > * {font-size:0.81rem;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart {background-color:#f8f9fb; display:flex; justify-content:space-between; align-items:center; padding:15px;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .title_price {}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .title_price h1 {font-weight:500;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .title_price .price {display:inline-block;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .title_price span {}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .quantity_btn_box {display:flex; gap:3px;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .quantity_btn_box button {width:30px; line-height:30px; border:1px solid #d9d9d9;}
+#wrap main #detail_wrap .m_order_sheet .m_title_cart .quantity_btn_box #quantity {
+    font-size:0.88rem; background-color:#f9f9f9; text-align: center; width:45px; line-height:30px;
+    margin:0 -3px 0 -3px;
+    border-top:1px  solid #d9d9d9;
+    border-bottom:1px  solid #d9d9d9; 
+}
+#wrap main #detail_wrap .m_order_sheet .total_price {display:flex; justify-content:space-between; align-items:center; margin:15px 0;}
+#wrap main #detail_wrap .m_order_sheet .total_price dt {font-size:0.88rem; font-weight:600;}
+#wrap main #detail_wrap .m_order_sheet .total_price dt span {font-size:0.81rem; color:#777;}
+#wrap main #detail_wrap .m_order_sheet .total_price dd {font-size:1.13rem; font-weight:600;}
+#wrap main #detail_wrap .m_order_sheet .total_price dd span {font-size:0.88rem; color:#777;}
+#wrap main #detail_wrap .m_order_sheet .order_btn {display:flex; gap:20px;}
+#wrap main #detail_wrap .m_order_sheet .order_btn a {width:100%; text-align:center; padding:10px 0;}
+#wrap main #detail_wrap .m_order_sheet .order_btn .cart_btn {border:1px solid #d9d9d9;}
+#wrap main #detail_wrap .m_order_sheet .order_btn .buy_btn {background-color:#92C501; color:#fff;}

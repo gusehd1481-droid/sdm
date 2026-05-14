@@ -310,6 +310,9 @@ const eventBeautySwiper = new Swiper(eventBeauty, {
         prevEl:'.vertical_box .prev',
         nextEl:'.vertical_box .next',
     },
+    scrollbar:{
+        el:'.event_box .vertical_box .scrollbar',
+    },
     breakpoints:{
         700:{
             slidesPerView:2,

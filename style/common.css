@@ -8,7 +8,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 header {
     width:100%; height:70px; padding:0 200px;
     display:flex; justify-content:space-between; align-items:center;
-    position:fixed; z-index:999;  top:0;
+    position:fixed; z-index:998;  top:0;
     background-color: transparent;
     transition:background-color 0.3s;
 }
@@ -17,14 +17,45 @@ header.scrolled { /* 헤더 스크롤 시 */
 }
 header .menu {display:block; width:32px;}
 header .menu img {width:100%;}
-header h1 {
+header .open_menu_bg {
+    width:100%; height:100vh; background:rgba(0,0,0,0.25); position:fixed; top:0; left:0; z-index:999;
+    display:none;
+}
+header .open_menu_bg .side_wrap {
+    max-width:490px; min-width:350px; height:100%; 
+    background-color:#E9F3CC;
+}
+header .open_menu_bg .side_wrap .menu_top,
+header .open_menu_bg .side_wrap .menu_mid,
+header .open_menu_bg .side_wrap .menu_btm {border-bottom:1px solid #000;}
+header .open_menu_bg .side_wrap .menu_top {
+    width:100%; padding:30px; 
+    display:flex; justify-content:space-between; align-items:center;
+}
+header .open_menu_bg .side_wrap .menu_top h1 {width:100%;}
+header .open_menu_bg .side_wrap .menu_top h1 a {width:120px; display:block;}
+header .open_menu_bg .side_wrap .menu_top h1 a img {width:100%;}
+header .open_menu_bg .side_wrap .menu_top .close_btn {width:24px;}
+header .open_menu_bg .side_wrap .menu_top .close_btn img {width:100%;}
+header .open_menu_bg .side_wrap .menu_mid {padding:30px;}
+header .open_menu_bg .side_wrap .menu_mid h1 {width:100%; font-size:1.5rem; font-weight:500;}
+header .open_menu_bg .side_wrap .menu_mid nav {}
+header .open_menu_bg .side_wrap .menu_mid nav .gnb {}
+header .open_menu_bg .side_wrap .menu_mid nav .gnb li {width:100%;}
+header .open_menu_bg .side_wrap .menu_mid nav .gnb li a {display:block; padding:5px 10px }
+header .open_menu_bg .side_wrap .menu_btm {padding:30px;}
+header .open_menu_bg .side_wrap .menu_btm h1 {width:100%; font-size:1.5rem; font-weight:500;}
+header .open_menu_bg .side_wrap .menu_btm .m_snb {}
+header .open_menu_bg .side_wrap .menu_btm .m_snb li {width:100%; }
+header .open_menu_bg .side_wrap .menu_btm .m_snb li a {display:block; padding:5px 10px}
+header > h1 {
     width:120px;
     position:absolute;
     left:50%;
     transform:translateX(-50%);
 }
-header h1 a {}
-header h1 a img {width:100%;}
+header > h1 a {}
+header > h1 a img {width:100%;}
 header .snb {display:flex; gap:10px;}
 header .snb p {width:16px;}
 header .snb p img {width:100%;}
